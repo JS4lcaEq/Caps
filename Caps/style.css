@@ -4,7 +4,7 @@
 
 nav {
     background-color: rgba(15, 39, 66, 0.50);
-    height: 99px;
+    /*height: 99px;*/
     width: 100%;
     position: fixed;
 }
@@ -13,7 +13,10 @@ nav {
         float: right;
         list-style: none;
         font-size: 1.4em;
-        /*font-weight: bold;*/
+        font-family: "Open Sans",sans-serif; 
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
     }
 
     nav img {
@@ -24,7 +27,6 @@ nav {
 
         nav ul li {
             float:left;
-            
             line-height: 99px;
         }
             nav ul li a {
@@ -52,7 +54,7 @@ footer {
 
 
 .col {
-    width: 1000px;
+    width: 50%;
     margin: auto;
     min-height: 100%;
 }
@@ -71,3 +73,12 @@ footer {
     height: 100%;
     overflow-y:scroll;
 }
+#intro {
+    margin:0;
+    padding-top: 50%;
+    text-align:center;
+}
+
+    #intro h1 strong {
+        color:chartreuse;
+    }

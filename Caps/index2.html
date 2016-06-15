@@ -16,6 +16,10 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
 
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet" />
@@ -36,17 +40,21 @@
     <nav>
         <div class="col">
             <img src="assets/logo8.svg" />
+            designed from scratch
             <ul>
                 <li><a href="#" ng-click="ctrl.doScroll(1000)">Home</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </div>{{ctrl.scroll}}
+        </div>
     </nav>
-    <div va-scroll-="ctrl.scroll" class="scroll">
+    <div va-scroll="ctrl.scroll" class="scroll">
         <div class="page p1">
             <div class="col">
-                <p>1</p>
+                <div id="intro">
+                    <h1>Web Design for Everybody <strong>Capstone</strong></h1>
+                    <p>{{ctrl.scroll}}</p>
+                </div>
             </div>
         </div>
         <div class="page p2">
@@ -60,9 +68,7 @@
             </div>
         </div>
 
-        <footer>
-
-        </footer>
+        <footer></footer>
     </div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript
