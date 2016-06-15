@@ -34,31 +34,34 @@
 
 <body ng-controller="MainCtrl as ctrl">
     <nav>
-        <ul class="col">
-            <li><a href="#">link 1</a></li>
-            <li><a href="#">link 2</a></li>
-            <li><a href="#">link 3</a></li>
-        </ul>
+        <div class="col">{{ctrl.scroll}}
+            <img src="assets/logo4.svg" />
+            <ul>
+                <li><a href="#" ng-click="ctrl.doScroll(1000)">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-
-    <div class="page p1">
-        <div class="col">
-            <p>1</p>
+    <div va-scroll="ctrl.scroll" class="scroll">
+        <div class="page p1">
+            <div class="col">
+                <p>1</p>
+            </div>
         </div>
-    </div>
-    <div class="page p2">
-        <div class="col">
-            <p>2</p>
+        <div class="page p2">
+            <div class="col">
+                <p>2</p>
+            </div>
         </div>
-    </div>
-    <div class="page p3">
-        <div class="col">
-            <p>3</p>
+        <div class="page p3">
+            <div class="col">
+                <p>3</p>
+            </div>
         </div>
+
+        <footer>{{2 + 2}}</footer>
     </div>
-
-    <footer></footer>
-
     <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -68,6 +71,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="Scripts/angular.min.js"></script>
+    <script src="app/vaScroll/script.js"></script>
     <script src="app/app.js"></script>
     <script>angular.bootstrap("html", ['app']);</script>
 </body>

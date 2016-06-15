@@ -66,11 +66,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\vaDataWindow\script.js" />
+    <Content Include="app\vaDirectiveVirtualRepeater\script.js" />
+    <Content Include="app\vaDirectiveVirtualRepeater\style.css" />
+    <Content Include="app\vaDirectiveVirtualRepeater\template.html" />
+    <Content Include="app\vaScroll\script.js" />
     <Content Include="assets\bg2.jpg" />
     <Content Include="assets\bg3.jpg" />
     <Content Include="assets\bg4.jpg" />
     <Content Include="assets\bg5.jpg" />
     <Content Include="assets\bg6.jpg" />
+    <Content Include="assets\bg7.JPG" />
     <Content Include="assets\DSC_0007.JPG" />
     <Content Include="assets\DSC_0008.JPG" />
     <Content Include="assets\DSC_0011.JPG" />
@@ -85,6 +92,10 @@
     <Content Include="assets\ie-emulation-modes-warning.js" />
     <Content Include="assets\ie8-responsive-file-warning.js" />
     <Content Include="assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="assets\logo.svg" />
+    <Content Include="assets\logo2.svg" />
+    <Content Include="assets\logo3.svg" />
+    <Content Include="assets\logo4.svg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

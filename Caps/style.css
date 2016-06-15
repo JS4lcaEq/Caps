@@ -15,12 +15,19 @@ nav {
         font-weight: bold;
     }
 
+    nav img {
+        /*margin: 20px;*/
+        height:90px;
+        margin:5px;
+    }
+
         nav ul li {
             float:left;
-            padding: 10px 30px;
+            padding: 0 30px;
+            line-height: 99px;
         }
             nav ul li a {
-                color: aliceblue;
+                color: #c4e1fb;
             }
 
 footer {
@@ -46,5 +53,9 @@ footer {
 
 .p1 {
     background-image: url('assets/bg7.jpg');
-
+    background-size: cover;
+}
+.scroll {
+    height: 100%;
+    overflow-y:scroll;
 }
