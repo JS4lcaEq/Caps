@@ -1,11 +1,102 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Web Design for Everyone Capstone</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/favicon.ico">
+
+    <title>Self</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+
+
+    <!-- Custom styles for this template -->
+    <link href="app/vaDirectiveVirtualRepeater/style.css" rel="stylesheet" />
+
+    <!--<link href="jumbotron.css" rel="stylesheet">-->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-    
+
+<body ng-controller="MainCtrl as ctrl">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Virtual Repeater simple1</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+
+            </div><!--/.navbar-collapse -->
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Virtual Repeater</h1>
+            <p>AngularJS simple directive to display lists.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4 form-inline">
+                <h2>Data Source</h2>
+                <label>length: </label> <input class="form-control" ng-model="ctrl.cnt" />
+                <button class="btn btn-default" role="button" ng-click="ctrl.fillSrc(ctrl.cnt)">Reset</button>
+            </div>
+            <div class="col-md-4">
+                <h2>Options</h2>
+                <p class="form-inline"><label>length: </label> <input class="form-control" ng-model="ctrl.len" /></p>
+                <p class="form-inline"><label>index: </label> <input class="form-control" ng-model="ctrl.index" /></p>
+                <label>template: </label><input class="form-control" ng-model="ctrl.template" />
+
+
+            </div>
+            <div class="col-md-4">
+                <h2>Directive Sample</h2>
+
+            </div>
+        </div>
+        <hr />
+        <footer>
+            <p>Virtual Repeater &copy; VAsoft 2015</p>
+        </footer>
+    </div>
+    <pre>{{ctrl.debug}}</pre>
+    <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Scripts/jquery-2.2.3.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script>angular.bootstrap("html", ['app']);</script>
 </body>
 </html>
