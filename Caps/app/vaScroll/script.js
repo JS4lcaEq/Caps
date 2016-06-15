@@ -7,6 +7,7 @@
         function link(scope, element, attr) {
             console.log("vaScrollDirective");
             var trigger = false;
+
             element.on("scroll", function (event) {
                 scope.$apply(function () {
                     var sc = element.scrollTop();
@@ -17,7 +18,6 @@
                 });
                 
             });
-
 
             scope.$watch("vaScroll", function () {
                 if (!trigger) {

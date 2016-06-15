@@ -96,6 +96,11 @@
     <Content Include="assets\logo2.svg" />
     <Content Include="assets\logo3.svg" />
     <Content Include="assets\logo4.svg" />
+    <Content Include="assets\logo5.svg" />
+    <Content Include="assets\logo6.svg" />
+    <Content Include="assets\logo7.svg" />
+    <Content Include="assets\logo8.svg" />
+    <Content Include="assets\logo9.svg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

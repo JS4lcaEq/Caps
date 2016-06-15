@@ -34,16 +34,16 @@
 
 <body ng-controller="MainCtrl as ctrl">
     <nav>
-        <div class="col">{{ctrl.scroll}}
-            <img src="assets/logo4.svg" />
+        <div class="col">
+            <img src="assets/logo8.svg" />
             <ul>
                 <li><a href="#" ng-click="ctrl.doScroll(1000)">Home</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </div>
+        </div>{{ctrl.scroll}}
     </nav>
-    <div va-scroll="ctrl.scroll" class="scroll">
+    <div va-scroll-="ctrl.scroll" class="scroll">
         <div class="page p1">
             <div class="col">
                 <p>1</p>
@@ -60,7 +60,9 @@
             </div>
         </div>
 
-        <footer>{{2 + 2}}</footer>
+        <footer>
+
+        </footer>
     </div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript
