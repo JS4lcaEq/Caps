@@ -3,11 +3,25 @@
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.15);
-    height: 50px;
+    background-color: rgba(15, 39, 66, 0.50);
+    height: 99px;
     width: 100%;
     position: fixed;
 }
+
+    nav ul {
+        float: right;
+        list-style: none;
+        font-weight: bold;
+    }
+
+        nav ul li {
+            float:left;
+            padding: 10px 30px;
+        }
+            nav ul li a {
+                color: aliceblue;
+            }
 
 footer {
     background-color: rgba(0, 0, 0, 0.30);
@@ -17,14 +31,20 @@ footer {
 
 .page {
     min-height: 100%;
-    background-color: aliceblue;
+    /*background-color: aliceblue;*/
     border-bottom: solid 1px rgba(0, 0, 0, 0.15);
-    background-image: url('assets/bg2.jpg');
+    /*background-image: url('assets/bg5.jpg');*/
 }
 
-#col {
-    background-color: #ddeefc;
-    width: 800px;
+
+.col {
+    /*background-color: #ddeefc;*/
+    width: 1000px;
     margin: auto;
     min-height: 100%;
+}
+
+.p1 {
+    background-image: url('assets/bg7.jpg');
+
 }
