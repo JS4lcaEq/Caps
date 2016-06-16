@@ -9,6 +9,14 @@ nav {
     position: fixed;
 }
 
+    nav h1 {
+        margin: 0;
+        padding: 0;
+        line-height: 90px;
+        font-weight: 300;
+        color:#e6f2fe;
+    }
+
     nav ul {
         float: right;
         list-style: none;
@@ -23,6 +31,7 @@ nav {
         /*margin: 20px;*/
         height:90px;
         margin:5px;
+        float:left;
     }
 
         nav ul li {
