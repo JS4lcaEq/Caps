@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -37,6 +38,7 @@
 </head>
 
 <body ng-controller="MainCtrl as ctrl" >
+    <div id="debug">{{ctrl.scroll}}</div>
     <nav ng-class="{'scrolled': ctrl.scroll > 100}">
         <div class="col">
             <img src="assets/logo8.svg" />
@@ -49,12 +51,12 @@
             </ul>
         </div>
     </nav>
-    <div va-scroll="ctrl.scroll" class="scroll">
+    <div va-scroll="ctrl.scroll" va-set-scroll="ctrl.setScroll" class="scroll">
         <div class="page p1">
             <div class="col">
                 <div id="intro">
                     <h2>Web Design for Everybody <strong>Capstone</strong></h2>
-                    <p>{{ctrl.scroll}}</p>
+                    <p></p>
                 </div>
             </div>
         </div>

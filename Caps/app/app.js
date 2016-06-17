@@ -3,9 +3,10 @@
     function MainCtrl($scope) {
         this.test = "test";
         this.scroll = 1;
+        this.setScroll = 0;
         this.doScroll = function (scroll) {
             var self = this;
-            self.scroll = scroll;
+            self.setScroll = scroll;
         }
     }
 

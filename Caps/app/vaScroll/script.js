@@ -8,27 +8,26 @@
             console.log("vaScrollDirective");
             var trigger = false;
 
+
+
+            scope.$watch("vaSetScroll", function () {
+                console.log(scope.vaSetScroll)
+                element.scrollTop(scope.vaSetScroll);
+
+
+            });
+
             element.on("scroll", function (event) {
+                console.log("on scroll");
                 scope.$apply(function () {
                     var sc = element.scrollTop();
-                    //console.log(sc);
-                    trigger = true;
-                    scope.vaScroll = sc;
-
+                    if (scope.vaScroll != sc) {
+                        scope.vaScroll = sc;
+                    }
+                    
                 });
                 
             });
-
-            scope.$watch("vaScroll", function () {
-                if (!trigger) {
-                    console.log(scope.vaScroll)
-                    element.scrollTop(scope.vaScroll);
-                }
-                trigger = false;
-
-            });
-
-
 
 
         }
@@ -39,7 +38,8 @@
             transclude: true,
             scope: {
                 vaData: "=",
-                vaScroll: "="
+                vaScroll: "=",
+                vaSetScroll: "<"
             }
         }
     }
