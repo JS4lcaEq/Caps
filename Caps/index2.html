@@ -36,16 +36,17 @@
     <![endif]-->
 </head>
 
-<body ng-controller="MainCtrl as ctrl">
-    <nav>
+<body ng-controller="MainCtrl as ctrl" >
+    <nav ng-class="{'scrolled': ctrl.scroll > 100}">
         <div class="col">
             <img src="assets/logo8.svg" />
-            
+            <h1>SELF</h1>
             <ul>
-                <li><a href="#" ng-click="ctrl.doScroll(1000)">Home</a></li>
+                <li><a href="#" ng-click="ctrl.doScroll(10)">Home</a></li>
+                <li><a href="#" ng-click="ctrl.doScroll(1000)">About</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul><h1>Self</h1>
+            </ul>
         </div>
     </nav>
     <div va-scroll="ctrl.scroll" class="scroll">
@@ -59,11 +60,13 @@
         </div>
         <div class="page p2">
             <div class="col">
+                <h3>About</h3>
                 <p>2</p>
             </div>
         </div>
         <div class="page p3">
             <div class="col">
+                <h3>Gallery</h3>
                 <p>3</p>
             </div>
         </div>

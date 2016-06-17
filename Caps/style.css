@@ -6,21 +6,29 @@ nav {
     background-color: rgba(15, 39, 66, 0.50);
     /*height: 99px;*/
     width: 100%;
+    height: 100px;
     position: fixed;
 }
 
+    nav.scrolled {
+        background-color: rgb(0, 0, 0);
+        height: 70px;
+    }
+
     nav h1 {
-        margin: 0;
+        margin: 0 50px;
         padding: 0;
-        line-height: 90px;
+        line-height: 100px;
         font-weight: 300;
         color:#e6f2fe;
+        font-size: 48px;
+        float:left;
     }
 
     nav ul {
         float: right;
         list-style: none;
-        font-size: 1.4em;
+        font-size: 1.6em;
         font-family: "Open Sans",sans-serif; 
         font-weight: 300;
         margin: 0;
@@ -28,15 +36,17 @@ nav {
     }
 
     nav img {
-        /*margin: 20px;*/
-        height:90px;
-        margin:5px;
+        height:100px;
         float:left;
+    }
+
+    nav.scrolled img {
+        height:70px;
     }
 
         nav ul li {
             float:left;
-            line-height: 99px;
+            line-height: 100px;
         }
             nav ul li a {
                 color: #e6f2fe;
@@ -69,7 +79,7 @@ footer {
 }
 
 .p1 {
-    background-image: url('assets/bg7_2.JPG');
+    background-image: url('assets/bgn.JPG');
     background-size: cover;
 }
 
