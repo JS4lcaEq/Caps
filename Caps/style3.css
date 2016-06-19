@@ -17,7 +17,7 @@ header {
     /*position:absolute;*/
     width: 100%;
     min-height: 100%;
-    background-image: url('assets/bgn.jpg');
+    background-image: url('assets/bg7_2.jpg');
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ nav {
         padding-left: 40px;
     }
 .p1 {
-    background-image: url('assets/bgn.jpg');
+    /*background-image: url('assets/bgn.jpg');*/
     background-size: cover;
 }
 
