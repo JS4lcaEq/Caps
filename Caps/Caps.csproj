@@ -82,9 +82,9 @@
     <Content Include="assets\favicon.ico" />
     <Content Include="assets\favicon_1.ico" />
     <Content Include="assets\favicon_old.ico" />
-    <Content Include="assets\html5shiv.min.js" />
-    <Content Include="assets\ie-emulation-modes-warning.js" />
-    <Content Include="assets\ie8-responsive-file-warning.js" />
+    <Content Include="assets\js\html5shiv.min.js" />
+    <Content Include="assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="assets\js\ie8-responsive-file-warning.js" />
     <Content Include="assets\js\ie10-viewport-bug-workaround.js" />
     <Content Include="assets\logo.svg" />
     <Content Include="assets\logo2.svg" />
