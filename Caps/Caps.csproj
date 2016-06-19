@@ -77,6 +77,7 @@
     <Content Include="assets\bg4.jpg" />
     <Content Include="assets\bg7_1.jpg" />
     <Content Include="assets\bg7_2.jpg" />
+    <Content Include="assets\bgn.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="assets\favicon.ico" />
     <Content Include="assets\favicon_1.ico" />
