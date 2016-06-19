@@ -17,7 +17,7 @@ header {
     /*position:absolute;*/
     width: 100%;
     min-height: 100%;
-    background-image: url('assets/bgn_.jpg');
+    background-image: url('assets/bgn.jpg');
     background-size: cover;
 }
 
@@ -60,7 +60,7 @@ nav {
         color:aliceblue;
         text-decoration: none;
         line-height: 40px;
-        padding-left: 40px;
+        padding:0 40px;
     }
 .p1 {
     /*background-image: url('assets/bgn.jpg');*/
@@ -70,14 +70,60 @@ nav {
 #intro {
     /*float:left;*/
     /*padding-top:20%;*/
-    color:aliceblue;
+    color:rgb(255, 255, 255);
     text-align: center;
     /*line-height: 50%;*/
 }
 #debug {
     position: fixed;
-    background-color: #ffd800;
+    background-color: rgba(255, 216, 0, 0.29);
     z-index: 1000;
     right: 0;
-    bottom: 0;
+    top: 0;
+}
+
+@media all and (min-width: 400px) {
+    nav ul {
+        height: 40px;
+    }
+    
+    nav ul li {
+        float:left;
+    }
+    
+    nav a {
+        /*background-color: rgba(15, 39, 66, 0.5);*/
+        /*display:block;*/
+        /*color:#ffd800;*/
+        /*text-decoration: none;*/
+        /*line-height: 40px;*/
+        /*padding-left: 40px;*/
+    }
+}
+@media all and (min-width: 600px) {
+    nav {
+        height: 70px;
+    }
+    
+    nav ul {
+        /*height: 40px;*/
+        float:right;
+    }
+
+    nav h1 {
+        float: left;
+    }
+    
+    nav ul li {
+        /*float:left;*/
+    }
+    
+    nav a {
+        /*background-color: rgba(15, 39, 66, 0.5);*/
+        /*display:block;*/
+        /*color:#ffd800;*/
+        /*text-decoration: none;*/
+        /*line-height: 40px;*/
+        /*padding-left: 40px;*/
+    }
 }
