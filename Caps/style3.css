@@ -23,7 +23,7 @@ header {
 
 nav {
     /*height: 50px;*/
-    background-color: rgba(15, 39, 66, 0.4);
+    
     color: rgb(255, 255, 255);
     /*margin-bottom: -140px;*/
     z-index:1000;
@@ -44,7 +44,7 @@ nav {
         list-style: none;
         padding: 10px 0;
         margin:0;
-        /*background-color: rgba(15, 39, 66, 0.5);*/
+        background-color: rgba(15, 39, 66, 0.4);
     }
 
     nav h1 {
@@ -76,38 +76,38 @@ nav {
 }
 #debug {
     position: fixed;
-    background-color: rgba(255, 216, 0, 0.29);
+    background-color: rgba(255, 255, 255, 0.04);
     z-index: 1000;
     right: 0;
     top: 0;
+    font-size:9px;
 }
 
 @media all and (min-width: 400px) {
     nav ul {
         height: 40px;
+background-color: rgba(15, 39, 66, 0.4);
     }
     
     nav ul li {
         float:left;
     }
     
-    nav a {
-        /*background-color: rgba(15, 39, 66, 0.5);*/
-        /*display:block;*/
-        /*color:#ffd800;*/
-        /*text-decoration: none;*/
-        /*line-height: 40px;*/
-        /*padding-left: 40px;*/
+    nav {
+        background-color: transparent;
+
     }
 }
 @media all and (min-width: 550px) {
     nav {
         height: 70px;
+        background-color: rgba(15, 39, 66, 0.4);
     }
     
     nav ul {
         /*height: 40px;*/
         float:right;
+        background-color: transparent;
     }
 
     nav h1 {
