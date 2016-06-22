@@ -5,24 +5,23 @@
         var items = [];
 
         function link(scope, element, attr) {
-            console.log("vaScrollDirective");
+            var scrollElement = element.find("#scroll");
+            console.log("vaScrollDirective", scrollElement);
             var trigger = false;
 
 
 
             scope.$watch("vaSetScroll", function () {
                 console.log(scope.vaSetScroll)
-                element.scrollTop(scope.vaSetScroll);
-
-
+                //element.scrollTop(scope.vaSetScroll);
             });
 
-            element.on("scroll", function (event) {
+            scrollElement.on("scroll", function (event) {
                 console.log("on scroll");
                 scope.$apply(function () {
-                    var sc = element.scrollTop();
-                    if (scope.vaScroll != sc) {
-                        scope.vaScroll = sc;
+                    var sc = scrollElement.scrollTop();
+                    if (scope.vaGetScroll != sc) {
+                        scope.vaGetScroll = sc;
                     }
                     
                 });
@@ -33,12 +32,12 @@
         }
 
         return {
-            template: '<ng-transclude></ng-transclude>',
+            template: '<div id="scroll" ng-class="{\'scrolled\': vaGetScroll > 0}"><ng-transclude></ng-transclude></div>',
             link: link,
             transclude: true,
             scope: {
                 vaData: "=",
-                vaScroll: "=",
+                vaGetScroll: "=",
                 vaSetScroll: "<"
             }
         }

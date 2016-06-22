@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Mobile Meta -->
-
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -16,18 +15,15 @@
     <!-- Bootstrap core CSS -->
     <!--<link href="Content/bootstrap.min.css" rel="stylesheet" />-->
     <!--<link href="Content/bootstrap-theme.min.css" rel="stylesheet" />-->
-
     <!-- Web Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <!--<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>-->
-
     <!-- Custom styles -->
-    <link href="style3.css" rel="stylesheet" />
+    <link href="style4.css" rel="stylesheet" />
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!--<script src="assets/js/ie-emulation-modes-warning.js"></script>-->
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.min.js"></script>
@@ -38,24 +34,26 @@
 
 <body ng-controller="MainCtrl as ctrl">
 
-    <div va-scroll-="ctrl.scroll" va-set-scroll-="ctrl.setScroll" class="scroll">
+    <va-scroll va-get-scroll="ctrl.scroll"  >
 
-        <header ng-class="{'scrolled': ctrl.scroll > 100}">
-
-            <nav>
+        <article id="home" class="page p0">
+            <div id="top">
                 <div class="col">
-                    <img src="assets/logo8.svg" />
-                    <h1>SELF</h1>
+                    <header>
+                        <img src="assets/logo8.svg" />
+                        <h1>SELF</h1>
+                    </header>
+                    <nav>
+                        <ul>
+                            <li><a href="#home" ng-click="ctrl.doScroll(10)">Home</a></li>
+                            <li><a href="#about" ng-click="ctrl.doScroll(1000)">About</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
                 </div>
+            </div>
 
-                <ul>
-                    <li><a href="#" ng-click="ctrl.doScroll(10)">Home</a></li>
-                    <li><a href="#" ng-click="ctrl.doScroll(1000)">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-
-            </nav>
 
 
 
@@ -63,35 +61,35 @@
                 <h2>Web Design for Everybody <strong>Capstone</strong></h2>
                 <p></p>
             </div>
-        </header>
 
 
+        </article>
 
-        <div class="page p1">
+        <article id="about" class="page p1">
             <div class="col">
                 page 1
             </div>
-        </div>
+        </article>
 
-        <div class="page p2">
+        <article class="page p2">
             <div class="col">
                 <h3>About</h3>
                 <p>2</p>
             </div>
-        </div>
+        </article>
 
-        <div class="page p3">
+        <article class="page p3">
             <div class="col">
                 <h3>Gallery</h3>
                 <p>3</p>
             </div>
-        </div>
+        </article>
 
         <footer>
             Copyright © 2016 Self.
         </footer>
 
-    </div>
+    </va-scroll>
     <div id="debug">Debug: {{ctrl.scroll}}</div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript

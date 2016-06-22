@@ -34,6 +34,10 @@ nav {
     /*margin-bottom: 50%;*/
 }
 
+.col {
+    margin:auto;
+}
+
     nav img {
         float: left;
         height: 70px;
@@ -83,7 +87,7 @@ nav {
     font-size:9px;
 }
 
-@media all and (min-width: 400px) {
+@media all and (min-width: 768px) {
     nav ul {
         height: 40px;
 background-color: rgba(15, 39, 66, 0.4);
@@ -97,8 +101,12 @@ background-color: rgba(15, 39, 66, 0.4);
         background-color: transparent;
 
     }
+
+    .col {
+        width: 80%;
+    }
 }
-@media all and (min-width: 550px) {
+@media all and (min-width: 992px) {
     nav {
         height: 70px;
         background-color: rgba(15, 39, 66, 0.4);
@@ -125,5 +133,11 @@ background-color: rgba(15, 39, 66, 0.4);
         /*text-decoration: none;*/
         /*line-height: 40px;*/
         /*padding-left: 40px;*/
+    }
+}
+
+@media all and (min-width: 768px) {
+    .col {
+        width: 80%;
     }
 }
