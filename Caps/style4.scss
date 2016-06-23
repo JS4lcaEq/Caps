@@ -1,0 +1,152 @@
+﻿$background-color-bar: rgba(15, 39, 66, 0.4);
+
+html, body, #scroll {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans",sans-serif;
+}
+
+article {
+    min-height: 100%;
+    background-size: cover;
+}
+
+.col {
+    margin: auto;
+}
+
+#scroll {
+    overflow-y: scroll;
+}
+
+#home {
+    background-image: url('assets/img/bg7.jpg');
+}
+
+#intro {
+    padding-top: 10%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#debug {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.04);
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    font-size: 9px;
+}
+
+nav {
+    color: rgb(255, 255, 255);
+    background-color: $background-color-bar;
+
+    ul {
+        list-style: none;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    a {
+        display: block;
+        color: aliceblue;
+        text-decoration: none;
+        line-height: 40px;
+        padding: 0 40px;
+    }
+}
+
+header {
+    img {
+        float: left;
+        height: 70px;
+        margin-right: 15px;
+    }
+
+    h1 {
+        margin: 0;
+        line-height: 70px;
+        font-size: 32px;
+        color: aliceblue;
+    }
+}
+
+.scrolled #top{
+	position: fixed;
+	top:0;
+	width: 100%;
+}
+
+@media all and (min-width: 768px) {
+    header {
+        width: 80%;
+        margin: auto;
+    }
+
+    nav {
+        width: 100%;
+
+        a {
+            padding: 0 60px 0 20px;
+        }
+
+        ul {
+            height: 40px;
+            width: 80%;
+            margin: auto;
+
+            li {
+                float: left;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 992px) {
+    #top {
+        height: 70px;
+        background-color: $background-color-bar;
+
+        > .col {
+            width: 900px;
+        }
+    }
+
+    header {
+        width: auto;
+        height: 70px;
+        background-color: transparent;
+        float: left;
+
+        h1 {
+            float: left;
+        }
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        height: 70px;
+        background-color: transparent;
+
+        a {
+            padding: 0 0 0 80px;
+        }
+
+        ul {
+            float: right;
+            width: auto;
+        }
+    }
+}
+
+/*@media all and (min-width: 768px) {
+    .col {
+        width: 80%;
+    }
+}*/
