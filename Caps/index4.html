@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE ng-controller="MainCtrl as ctrl" html>
 <html lang="en">
-<head>
+<head >
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +32,7 @@
 
 </head>
 
-<body ng-controller="MainCtrl as ctrl">
+<body>
 
     <va-scroll va-get-scroll="ctrl.scroll"  >
 
@@ -67,20 +67,20 @@
 
         <article id="about" class="page p1">
             <div class="col">
-                page 1
+                <h2>page 1</h2>
             </div>
         </article>
 
         <article class="page p2">
             <div class="col">
-                <h3>About</h3>
+                <h2>About</h2>
                 <p>2</p>
             </div>
         </article>
 
         <article class="page p3">
             <div class="col">
-                <h3>Gallery</h3>
+                <h2>Gallery</h2>
                 <p>3</p>
             </div>
         </article>

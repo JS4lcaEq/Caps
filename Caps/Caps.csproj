@@ -130,7 +130,7 @@
     <Content Include="scroll.html" />
     <Content Include="style.css" />
     <Content Include="style3.css" />
-    <Compile Include="style4.scss" />
+    <None Include="style4.scss" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
