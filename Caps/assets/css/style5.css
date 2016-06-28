@@ -43,8 +43,24 @@ header {
 article {
   min-height: 100%; }
 
+nav {
+  background-color: #348e10; }
+  nav a {
+    display: block; }
+  nav ul {
+    margin: auto;
+    list-style: none; }
+
 .col {
-  width: 80%;
+  /*width: 80%;*/
   margin: auto; }
+
+@media all and (min-width: 768px) {
+  nav {
+    height: 50px; }
+    nav li {
+      float: left; }
+      nav li a {
+        line-height: 50px; } }
 
 /*# sourceMappingURL=style5.css.map */

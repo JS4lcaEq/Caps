@@ -1,4 +1,7 @@
-﻿html, body {
+﻿$second-row-height: 50px;
+
+
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -56,7 +59,34 @@ article {
     min-height: 100%;
 }
 
+nav {
+    background-color: #348e10;
+
+    a {
+        display: block;
+    }
+
+    ul {
+        margin: auto;
+        list-style: none;
+    }
+}
+
 .col {
-    width: 80%;
+    /*width: 80%;*/
     margin: auto;
+}
+
+@media all and (min-width: 768px) {
+    nav {
+        height: $second-row-height;
+
+        li {
+            float: left;
+
+            a {
+                line-height: $second-row-height;
+            }
+        }
+    }
 }
