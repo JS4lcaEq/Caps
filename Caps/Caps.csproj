@@ -72,38 +72,40 @@
     <Content Include="app\vaDirectiveVirtualRepeater\style.css" />
     <Content Include="app\vaDirectiveVirtualRepeater\template.html" />
     <Content Include="app\vaScroll\script.js" />
-    <Content Include="assets\img\bg2.jpg" />
-    <Content Include="assets\img\bg3.jpg" />
-    <Content Include="assets\img\bg4.jpg" />
-    <Content Include="assets\img\bg7.jpg" />
-    <Content Include="assets\img\bgn_.jpg" />
-    <Content Include="assets\img\bgn.jpg" />
+    <Content Include="assets\css\img\bg2.jpg" />
+    <Content Include="assets\css\img\bg3.jpg" />
+    <Content Include="assets\css\img\bg4.jpg" />
+    <Content Include="assets\css\img\bg7.jpg" />
+    <Content Include="assets\css\img\bgn_.jpg" />
+    <Content Include="assets\css\img\bgn.jpg" />
     <Content Include="assets\css\grid.css" />
     <Content Include="assets\css\offcanvas.css" />
+    <Content Include="assets\css\style5.css" />
     <Content Include="assets\js\offcanvas.js" />
     <Content Include="bootstrap4.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="assets\img\favicon.ico" />
-    <Content Include="assets\img\favicon_1.ico" />
-    <Content Include="assets\img\favicon_old.ico" />
+    <Content Include="assets\css\img\favicon.ico" />
+    <Content Include="assets\css\img\favicon_1.ico" />
+    <Content Include="assets\css\img\favicon_old.ico" />
     <Content Include="assets\js\html5shiv.min.js" />
     <Content Include="assets\js\ie-emulation-modes-warning.js" />
     <Content Include="assets\js\ie8-responsive-file-warning.js" />
     <Content Include="assets\js\ie10-viewport-bug-workaround.js" />
-    <Content Include="assets\img\logo.svg" />
-    <Content Include="assets\img\logo2.svg" />
-    <Content Include="assets\img\logo3.svg" />
-    <Content Include="assets\img\logo4.svg" />
-    <Content Include="assets\img\logo5.svg" />
-    <Content Include="assets\img\logo6.svg" />
-    <Content Include="assets\img\logo7.svg" />
-    <Content Include="assets\img\logo8.svg" />
-    <Content Include="assets\img\logo9.svg" />
+    <Content Include="assets\css\img\logo.svg" />
+    <Content Include="assets\css\img\logo2.svg" />
+    <Content Include="assets\css\img\logo3.svg" />
+    <Content Include="assets\css\img\logo4.svg" />
+    <Content Include="assets\css\img\logo5.svg" />
+    <Content Include="assets\css\img\logo6.svg" />
+    <Content Include="assets\css\img\logo7.svg" />
+    <Content Include="assets\css\img\logo8.svg" />
+    <Content Include="assets\css\img\logo9.svg" />
     <Content Include="index2.html" />
     <Content Include="index3.html" />
     <Content Include="index4.html" />
+    <Content Include="index5.html" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
@@ -111,12 +113,15 @@
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="assets\css\style5.scss" />
+    <Content Include="assets\css\style5.css.map" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
+    <Content Include="assets\css\style4.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -126,12 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
-    <Content Include="scroll.css" />
+    <Content Include="assets\css\scroll.css" />
     <Content Include="scroll.html" />
-    <Content Include="style.css" />
-    <Content Include="style3.css" />
-    <Compile Include="style4.scss" />
-    <Content Include="w2.html" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\style3.css" />
+    <None Include="assets\css\style4.scss" />
+    <Content Include="assets\css\style4.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

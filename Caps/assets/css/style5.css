@@ -1,0 +1,66 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#debug {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: antiquewhite; }
+
+#top {
+  /*min-height: 50%;*/
+  background-color: azure;
+  /*width: 80%;*/ }
+
+#scroll {
+  height: 100%; }
+
+#home {
+  background-color: #ccc;
+  height: 100%; }
+
+#about {
+  background-color: #cfc; }
+
+#gallery {
+  background-color: #fcc; }
+
+header {
+  height: 70px;
+  background-color: #e98888; }
+  header img {
+    width: 70px;
+    height: 70px;
+    background-color: brown;
+    display: block;
+    float: left; }
+  header h1 {
+    line-height: 70px;
+    margin: 0; }
+
+article {
+  min-height: 100%; }
+
+nav {
+  background-color: #348e10; }
+  nav a {
+    display: block; }
+  nav ul {
+    margin: auto;
+    list-style: none; }
+
+.col {
+  /*width: 80%;*/
+  margin: auto; }
+
+@media all and (min-width: 768px) {
+  nav {
+    height: 50px; }
+    nav li {
+      float: left; }
+      nav li a {
+        line-height: 50px; } }
+
+/*# sourceMappingURL=style5.css.map */
