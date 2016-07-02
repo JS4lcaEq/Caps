@@ -9,21 +9,19 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial;
 }
 
 article {
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    background-size: cover;
 }
 
 header {
     height: 70px;
-    /*background-color: rgba(165, 42, 42, 0.22);*/
+
     img {
-        width: 70px;
         height: 70px;
-        background-color: brown;
         display: block;
         float: left;
     }
@@ -31,22 +29,27 @@ header {
     h1 {
         line-height: 70px;
         margin: 0 0 0 20px;
-		float:left;
+        float: left;
+        color: #fff;
     }
 }
 
 nav {
     background-color: $semi-transparent;
+    height: 220px;
 
     a {
         display: block;
-		line-height: $second-row-height;
+        line-height: $second-row-height;
+        color: #fff;
+        text-decoration: none;
     }
 
     ul {
         margin: 0 0 0 70px;
         padding: 0;
         list-style: none;
+        width: 100%;
     }
 }
 
@@ -64,7 +67,7 @@ nav {
 
 #top {
     /*min-height: 50%;*/
-    background-color: azure;
+    /*background-color: azure;*/
     /*width: 80%;*/
 }
 
@@ -73,8 +76,12 @@ nav {
 }
 
 #home {
-    background-color: #ccc;
+    /*background-color: #ccc;*/
     height: 100%;
+    background-image: url('img/bg8.jpg');
+    color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 #about {
@@ -86,11 +93,15 @@ nav {
 }
 
 #intro {
-    background-color: aqua;
+    /*background-color: aqua;*/
     flex: 1 1 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    strong {
+        color: #3a9c2f;
+    }
 
     h2 {
         text-align: center;
@@ -103,6 +114,12 @@ nav {
     header {
         width: $step1-width;
         margin: auto;
+    }
+
+    #intro {
+        h2 {
+            font-size: 2em;
+        }
     }
 
     nav {
@@ -119,6 +136,7 @@ nav {
 
         a {
             line-height: $second-row-height;
+            margin: 0 20px;
         }
 
         li {
@@ -129,18 +147,28 @@ nav {
 
 @media all and (min-width: $step2-width) {
     header {
-        width: 200px;
+        width: 300px;
         margin: 0;
         float: left;
     }
 
+    #intro {
+        h2 {
+            font-size: 3em;
+        }
+    }
+
     nav {
         background-color: transparent;
-		li{
-			a{
-				line-height: 70px;
-			}
-		}
+
+        ul {
+            /*float:right;*/
+            width: auto;
+        }
+
+        a {
+            line-height: 70px;
+        }
     }
 
     .col {
@@ -149,5 +177,6 @@ nav {
 
     #top {
         background-color: $semi-transparent;
+        height: 70px;
     }
 }

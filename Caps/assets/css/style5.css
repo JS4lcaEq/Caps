@@ -1,36 +1,38 @@
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Arial; }
 
 article {
   min-height: 100%;
-  display: flex;
-  flex-direction: column; }
+  background-size: cover; }
 
 header {
-  height: 70px;
-  /*background-color: rgba(165, 42, 42, 0.22);*/ }
+  height: 70px; }
   header img {
-    width: 70px;
     height: 70px;
-    background-color: brown;
     display: block;
     float: left; }
   header h1 {
     line-height: 70px;
     margin: 0 0 0 20px;
-    float: left; }
+    float: left;
+    color: #fff; }
 
 nav {
-  background-color: rgba(15, 39, 66, 0.4); }
+  background-color: rgba(15, 39, 66, 0.4);
+  height: 220px; }
   nav a {
     display: block;
-    line-height: 50px; }
+    line-height: 50px;
+    color: #fff;
+    text-decoration: none; }
   nav ul {
     margin: 0 0 0 70px;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    width: 100%; }
 
 .col {
   /*width: 80%;*/
@@ -44,15 +46,19 @@ nav {
 
 #top {
   /*min-height: 50%;*/
-  background-color: azure;
+  /*background-color: azure;*/
   /*width: 80%;*/ }
 
 #scroll {
   height: 100%; }
 
 #home {
-  background-color: #ccc;
-  height: 100%; }
+  /*background-color: #ccc;*/
+  height: 100%;
+  background-image: url("img/bg8.jpg");
+  color: #fff;
+  display: flex;
+  flex-direction: column; }
 
 #about {
   background-color: #cfc; }
@@ -61,11 +67,13 @@ nav {
   background-color: #fcc; }
 
 #intro {
-  background-color: aqua;
+  /*background-color: aqua;*/
   flex: 1 1 0px;
   display: flex;
   align-items: center;
   justify-content: center; }
+  #intro strong {
+    color: #3a9c2f; }
   #intro h2 {
     text-align: center; }
 
@@ -73,6 +81,9 @@ nav {
   header {
     width: 768px;
     margin: auto; }
+
+  #intro h2 {
+    font-size: 2em; }
 
   nav {
     height: 50px; }
@@ -84,24 +95,32 @@ nav {
       justify-content: space-between;
       /*align-items:stretch;*/ }
     nav a {
-      line-height: 50px; }
+      line-height: 50px;
+      margin: 0 20px; }
     nav li {
       float: left; } }
 @media all and (min-width: 992px) {
   header {
-    width: 200px;
+    width: 300px;
     margin: 0;
     float: left; }
 
+  #intro h2 {
+    font-size: 3em; }
+
   nav {
     background-color: transparent; }
-    nav li a {
+    nav ul {
+      /*float:right;*/
+      width: auto; }
+    nav a {
       line-height: 70px; }
 
   .col {
     width: 992px; }
 
   #top {
-    background-color: rgba(15, 39, 66, 0.4); } }
+    background-color: rgba(15, 39, 66, 0.4);
+    height: 70px; } }
 
 /*# sourceMappingURL=style5.css.map */
