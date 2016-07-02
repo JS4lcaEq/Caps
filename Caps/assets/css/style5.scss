@@ -1,10 +1,58 @@
 ﻿$second-row-height: 50px;
+$step1-width: 768px;
+$step2-width: 992px;
+
+$semi-transparent: rgba(15, 39, 66, 0.4);
 
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 70px;
+    /*background-color: rgba(165, 42, 42, 0.22);*/
+    img {
+        width: 70px;
+        height: 70px;
+        background-color: brown;
+        display: block;
+        float: left;
+    }
+
+    h1 {
+        line-height: 70px;
+        margin: 0 0 0 20px;
+		float:left;
+    }
+}
+
+nav {
+    background-color: $semi-transparent;
+
+    a {
+        display: block;
+		line-height: $second-row-height;
+    }
+
+    ul {
+        margin: 0 0 0 70px;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.col {
+    /*width: 80%;*/
+    margin: auto;
 }
 
 #debug {
@@ -37,56 +85,69 @@ html, body {
     background-color: #fcc;
 }
 
-header {
-    height: 70px;
-    background-color: #e98888;
+#intro {
+    background-color: aqua;
+    flex: 1 1 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    img {
-        width: 70px;
-        height: 70px;
-        background-color: brown;
-        display: block;
-        float: left;
-    }
-
-    h1 {
-        line-height: 70px;
-        margin: 0;
+    h2 {
+        text-align: center;
     }
 }
 
-article {
-    min-height: 100%;
-}
 
-nav {
-    background-color: #348e10;
 
-    a {
-        display: block;
-    }
-
-    ul {
+@media all and (min-width: $step1-width) {
+    header {
+        width: $step1-width;
         margin: auto;
-        list-style: none;
     }
-}
 
-.col {
-    /*width: 80%;*/
-    margin: auto;
-}
-
-@media all and (min-width: 768px) {
     nav {
         height: $second-row-height;
 
+        ul {
+            width: $step1-width;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /*align-items:stretch;*/
+        }
+
+        a {
+            line-height: $second-row-height;
+        }
+
         li {
             float: left;
-
-            a {
-                line-height: $second-row-height;
-            }
         }
+    }
+}
+
+@media all and (min-width: $step2-width) {
+    header {
+        width: 200px;
+        margin: 0;
+        float: left;
+    }
+
+    nav {
+        background-color: transparent;
+		li{
+			a{
+				line-height: 70px;
+			}
+		}
+    }
+
+    .col {
+        width: $step2-width;
+    }
+
+    #top {
+        background-color: $semi-transparent;
     }
 }

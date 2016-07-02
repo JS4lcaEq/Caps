@@ -3,6 +3,39 @@ html, body {
   margin: 0;
   padding: 0; }
 
+article {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  height: 70px;
+  /*background-color: rgba(165, 42, 42, 0.22);*/ }
+  header img {
+    width: 70px;
+    height: 70px;
+    background-color: brown;
+    display: block;
+    float: left; }
+  header h1 {
+    line-height: 70px;
+    margin: 0 0 0 20px;
+    float: left; }
+
+nav {
+  background-color: rgba(15, 39, 66, 0.4); }
+  nav a {
+    display: block;
+    line-height: 50px; }
+  nav ul {
+    margin: 0 0 0 70px;
+    padding: 0;
+    list-style: none; }
+
+.col {
+  /*width: 80%;*/
+  margin: auto; }
+
 #debug {
   position: fixed;
   top: 0;
@@ -27,40 +60,48 @@ html, body {
 #gallery {
   background-color: #fcc; }
 
-header {
-  height: 70px;
-  background-color: #e98888; }
-  header img {
-    width: 70px;
-    height: 70px;
-    background-color: brown;
-    display: block;
-    float: left; }
-  header h1 {
-    line-height: 70px;
-    margin: 0; }
-
-article {
-  min-height: 100%; }
-
-nav {
-  background-color: #348e10; }
-  nav a {
-    display: block; }
-  nav ul {
-    margin: auto;
-    list-style: none; }
-
-.col {
-  /*width: 80%;*/
-  margin: auto; }
+#intro {
+  background-color: aqua;
+  flex: 1 1 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #intro h2 {
+    text-align: center; }
 
 @media all and (min-width: 768px) {
+  header {
+    width: 768px;
+    margin: auto; }
+
   nav {
     height: 50px; }
+    nav ul {
+      width: 768px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /*align-items:stretch;*/ }
+    nav a {
+      line-height: 50px; }
     nav li {
-      float: left; }
-      nav li a {
-        line-height: 50px; } }
+      float: left; } }
+@media all and (min-width: 992px) {
+  header {
+    width: 200px;
+    margin: 0;
+    float: left; }
+
+  nav {
+    background-color: transparent; }
+    nav li a {
+      line-height: 70px; }
+
+  .col {
+    width: 992px; }
+
+  #top {
+    background-color: rgba(15, 39, 66, 0.4); } }
 
 /*# sourceMappingURL=style5.css.map */
