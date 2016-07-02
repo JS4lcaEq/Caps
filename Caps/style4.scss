@@ -74,12 +74,46 @@ header {
         font-size: 32px;
         color: aliceblue;
     }
+
+    nav {
+        a {
+            line-height: 50px;
+        }
+    }
 }
 
-.scrolled #top{
-	position: fixed;
-	top:0;
-	width: 100%;
+.scrolled {
+    #top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #000000;
+        height: 50px;
+    }
+
+    header {
+        img {
+            height: 50px;
+        }
+
+        h1 {
+            line-height: 50px;
+            font-size: 28px;
+        }
+    }
+
+    nav {
+        height: 50px;
+
+        ul {
+            margin: 0;
+			padding: 0;
+        }
+
+        a {
+            line-height: 50px;
+        }
+    }
 }
 
 @media all and (min-width: 768px) {

@@ -55,11 +55,27 @@ header h1 {
   line-height: 70px;
   font-size: 32px;
   color: aliceblue; }
+header nav a {
+  line-height: 50px; }
 
 .scrolled #top {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  background-color: #000000;
+  height: 50px; }
+.scrolled header img {
+  height: 50px; }
+.scrolled header h1 {
+  line-height: 50px;
+  font-size: 28px; }
+.scrolled nav {
+  height: 50px; }
+  .scrolled nav ul {
+    margin: 0;
+    padding: 0; }
+  .scrolled nav a {
+    line-height: 50px; }
 
 @media all and (min-width: 768px) {
   header {
