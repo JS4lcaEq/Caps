@@ -79,6 +79,7 @@
     <Content Include="assets\css\img\bgn_.jpg" />
     <Content Include="assets\css\img\bgn.jpg" />
     <Content Include="assets\css\grid.css" />
+    <Content Include="assets\css\img\logo_m.svg" />
     <Content Include="assets\css\offcanvas.css" />
     <Content Include="assets\css\style5.css" />
     <Content Include="assets\js\offcanvas.js" />
@@ -115,6 +116,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="assets\css\style5.scss" />
     <Content Include="assets\css\style5.css.map" />
+    <Content Include="assets\css\fonts\bankgothic-lt-bt-light.ttf" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -153,7 +155,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49081</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

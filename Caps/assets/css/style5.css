@@ -1,3 +1,4 @@
+/*$semi-transparent: rgba(15, 39, 66, 0.4);*/
 html, body {
   height: 100%;
   margin: 0;
@@ -11,17 +12,23 @@ article {
 header {
   height: 70px; }
   header img {
-    height: 70px;
+    height: 120px;
     display: block;
-    float: left; }
+    float: left;
+    margin-top: -60px; }
   header h1 {
     line-height: 70px;
     margin: 0 0 0 20px;
     float: left;
-    color: #fff; }
+    color: #000;
+    font-family: bankgothic-lt-bt-light; }
 
+@font-face {
+  font-family: 'bankgothic-lt-bt-light';
+  src: url("fonts/bankgothic-lt-bt-light.ttf") format("truetype"); }
 nav {
-  background-color: rgba(15, 39, 66, 0.4);
+  /*background-color: linear-gradient(to right, #aaa, #000);*/
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
   height: 220px; }
   nav a {
     display: block;
@@ -47,7 +54,8 @@ nav {
 #top {
   /*min-height: 50%;*/
   /*background-color: azure;*/
-  /*width: 80%;*/ }
+  /*width: 80%;*/
+  margin-top: 90px; }
 
 #scroll {
   height: 100%; }
@@ -55,8 +63,8 @@ nav {
 #home {
   /*background-color: #ccc;*/
   height: 100%;
-  background-image: url("img/bg8.jpg");
-  color: #fff;
+  /*background-image: url('img/bg8.jpg');*/
+  color: #555;
   display: flex;
   flex-direction: column; }
 
@@ -101,7 +109,7 @@ nav {
       float: left; } }
 @media all and (min-width: 992px) {
   header {
-    width: 300px;
+    width: 490px;
     margin: 0;
     float: left; }
 
@@ -109,7 +117,7 @@ nav {
     font-size: 3em; }
 
   nav {
-    background-color: transparent; }
+    background: transparent; }
     nav ul {
       /*float:right;*/
       width: auto; }
@@ -120,7 +128,7 @@ nav {
     width: 992px; }
 
   #top {
-    background-color: rgba(15, 39, 66, 0.4);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
     height: 70px; } }
 
 /*# sourceMappingURL=style5.css.map */

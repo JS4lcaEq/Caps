@@ -2,7 +2,8 @@
 $step1-width: 768px;
 $step2-width: 992px;
 
-$semi-transparent: rgba(15, 39, 66, 0.4);
+/*$semi-transparent: rgba(15, 39, 66, 0.4);*/
+$semi-transparent: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
 
 
 html, body {
@@ -21,21 +22,28 @@ header {
     height: 70px;
 
     img {
-        height: 70px;
+        height: 120px;
         display: block;
         float: left;
+		margin-top: -60px;
     }
 
     h1 {
         line-height: 70px;
         margin: 0 0 0 20px;
         float: left;
-        color: #fff;
+        color: #000;
+        font-family:bankgothic-lt-bt-light;
     }
+}
+@font-face {
+    font-family: 'bankgothic-lt-bt-light';
+    src: url('fonts/bankgothic-lt-bt-light.ttf') format('truetype');
 }
 
 nav {
-    background-color: $semi-transparent;
+    /*background-color: linear-gradient(to right, #aaa, #000);*/
+	background: $semi-transparent;
     height: 220px;
 
     a {
@@ -69,6 +77,7 @@ nav {
     /*min-height: 50%;*/
     /*background-color: azure;*/
     /*width: 80%;*/
+	margin-top: 90px;
 }
 
 #scroll {
@@ -78,8 +87,8 @@ nav {
 #home {
     /*background-color: #ccc;*/
     height: 100%;
-    background-image: url('img/bg8.jpg');
-    color: #fff;
+    /*background-image: url('img/bg8.jpg');*/
+    color: #555;
     display: flex;
     flex-direction: column;
 }
@@ -147,7 +156,7 @@ nav {
 
 @media all and (min-width: $step2-width) {
     header {
-        width: 300px;
+        width: 490px;
         margin: 0;
         float: left;
     }
@@ -159,7 +168,7 @@ nav {
     }
 
     nav {
-        background-color: transparent;
+        background: transparent;
 
         ul {
             /*float:right;*/
@@ -176,7 +185,7 @@ nav {
     }
 
     #top {
-        background-color: $semi-transparent;
+        background: $semi-transparent;
         height: 70px;
     }
 }
