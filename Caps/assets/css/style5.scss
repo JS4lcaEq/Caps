@@ -30,10 +30,11 @@ header {
 
     h1 {
         line-height: 70px;
-        margin: 0 0 0 20px;
+        margin: 0 0 0 55px;
         float: left;
         color: #000;
         font-family:bankgothic-lt-bt-light;
+        width: 500px;
     }
 }
 @font-face {
@@ -156,7 +157,7 @@ nav {
 
 @media all and (min-width: $step2-width) {
     header {
-        width: 490px;
+        width: 300px;
         margin: 0;
         float: left;
     }

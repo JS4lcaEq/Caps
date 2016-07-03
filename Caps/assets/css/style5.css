@@ -18,10 +18,11 @@ header {
     margin-top: -60px; }
   header h1 {
     line-height: 70px;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 55px;
     float: left;
     color: #000;
-    font-family: bankgothic-lt-bt-light; }
+    font-family: bankgothic-lt-bt-light;
+    width: 500px; }
 
 @font-face {
   font-family: 'bankgothic-lt-bt-light';
@@ -109,7 +110,7 @@ nav {
       float: left; } }
 @media all and (min-width: 992px) {
   header {
-    width: 490px;
+    width: 300px;
     margin: 0;
     float: left; }
 
