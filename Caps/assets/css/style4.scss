@@ -13,24 +13,30 @@ body {
 article {
     min-height: 100%;
     background-size: cover;
+    background-position: center;
 }
 
 .col {
     margin: auto;
 }
 
-#scroll {
-    overflow-y: scroll;
-}
+
 
 #home {
-    background-image: url('img/bg7.jpg');
+    background-image: url('img/bg_boat_b.jpg');
 }
 
 #intro {
-    padding-top: 10%;
-    color: rgb(255, 255, 255);
+    /*margin-top: 10%;*/
+    color: rgba(255, 255, 255, 0.25);
     text-align: center;
+    background-color: $background-color-bar;
+    font-size: 11vh;
+
+    h2 {
+        margin: 0;
+        /*line-height: 45vh;*/
+    }
 }
 
 #debug {
@@ -58,6 +64,7 @@ nav {
         text-decoration: none;
         line-height: 40px;
         padding: 0 40px;
+        width: 9vw;
     }
 }
 
@@ -72,16 +79,16 @@ header {
         margin: 0;
         line-height: 70px;
         font-size: 32px;
-        color: aliceblue;
+        color: rgba(15, 66, 60, 0.89);
     }
 
-    nav {
-        a {
-            line-height: 50px;
-        }
-    }
+
 }
 
+
+#scroll {
+    overflow-y: scroll;
+}
 .scrolled {
     #top {
         position: fixed;
@@ -107,11 +114,12 @@ header {
 
         ul {
             margin: 0;
-			padding: 0;
+            padding: 0;
         }
 
         a {
             line-height: 50px;
+            width: 20%;
         }
     }
 }
@@ -142,16 +150,24 @@ header {
 }
 
 @media all and (min-width: 992px) {
-    #top {
+    header {
+        width: 70%;
+    }    
+    
+    nav ul {
+        width: 70%;
+    }
+    
+    /*#top {
         height: 70px;
         background-color: $background-color-bar;
 
         > .col {
             width: 900px;
         }
-    }
+    }*/
 
-    header {
+    /*header {
         width: auto;
         height: 70px;
         background-color: transparent;
@@ -160,9 +176,9 @@ header {
         h1 {
             float: left;
         }
-    }
+    }*/
 
-    nav {
+    /*nav {
         width: auto;
         float: right;
         height: 70px;
@@ -176,7 +192,7 @@ header {
             float: right;
             width: auto;
         }
-    }
+    }*/
 }
 
 /*@media all and (min-width: 768px) {
