@@ -34,11 +34,10 @@
 
 <body ng-controller="MainCtrl as ctrl">
 
-    <va-scroll va-get-scroll="ctrl.scroll">
-        <div id="scroll">
+    
             <article id="home" class="page p0">
                 <div id="top">
-                    <!--<div class="col">-->
+                    <div class="col">
                     <header>
                         <img src="assets/css/img/logo2.svg" alt="'VA' - site logo" />
                         <h1>SELF</h1>
@@ -51,7 +50,7 @@
                             <li><a href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
-                    <!--</div>-->
+                    </div>
                 </div>
 
 
@@ -88,8 +87,10 @@
             <footer>
                 VA © 2016.
             </footer>
-        </div>
-    </va-scroll>
+
+
+    <va-scroll va-get-scroll="ctrl.scroll"></va-scroll>
+    
     <div id="debug">Debug: {{ctrl.scroll}}</div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript

@@ -1,6 +1,6 @@
 ﻿$background-color-bar: rgba(15, 39, 66, 0.3);
 
-html, body, #scroll {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 article {
-    min-height: 100%;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -45,10 +45,10 @@ article {
 
 #debug {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.04);
+    background-color: rgba(255, 255, 255, 0.4);
     z-index: 1000;
     right: 0;
-    top: 0;
+    bottom: 0;
     font-size: 11px;
 }
 
@@ -92,41 +92,11 @@ header {
 
 
 #scroll {
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
 }
 .scrolled {
-    #top {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #000000;
-        height: 50px;
-    }
 
-    header {
-        img {
-            height: 50px;
-        }
 
-        h1 {
-            line-height: 50px;
-            font-size: 28px;
-        }
-    }
-
-    nav {
-        height: 50px;
-
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        a {
-            line-height: 50px;
-            width: 20%;
-        }
-    }
 }
 
 @media all and (min-width: 568px) {
@@ -134,7 +104,7 @@ header {
         width: 80%;
         margin: auto;
     }
-    .col{
+    article > .col{
         width: 80%;
     }
     nav {
@@ -170,7 +140,7 @@ header {
     nav ul {
         width: 850px;
     }
-    .col {
+    article > .col {
         width: 850px;
     }
 }

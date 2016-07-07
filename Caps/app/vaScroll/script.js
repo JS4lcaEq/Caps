@@ -1,12 +1,12 @@
 ﻿(function () {
 
-    function fn() {
+    function fn($document) {
 
         var items = [];
 
         function link(scope, element, attr) {
-            var scrollElement = element.find("#scroll");
-            console.log("vaScrollDirective", scrollElement);
+
+
             var trigger = false;
 
 
@@ -16,16 +16,17 @@
                 //element.scrollTop(scope.vaSetScroll);
             });
 
-            scrollElement.on("scroll", function (event) {
-                console.log("on scroll");
+
+
+            $document.on("scroll", function (event) {
+                //console.log("$document scroll");
                 scope.$apply(function () {
-                    var sc = scrollElement.scrollTop();
+                    var sc = $document.scrollTop();
                     if (scope.vaGetScroll != sc) {
                         scope.vaGetScroll = sc;
                     }
-                    
+
                 });
-                
             });
 
 
