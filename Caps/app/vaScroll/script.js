@@ -22,9 +22,9 @@
                 //console.log("$document scroll");
                 scope.$apply(function () {
                     var sc = $document.scrollTop();
-                    if (scope.vaGetScroll != sc) {
+                    //if (scope.vaGetScroll != sc) {
                         scope.vaGetScroll = sc;
-                    }
+                    //}
 
                 });
             });
