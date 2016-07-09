@@ -66,8 +66,8 @@ header {
     color: #009303; }
   header a img {
     float: right;
-    margin: 20px;
-    width: 30px; }
+    margin: 15px;
+    width: 40px; }
 
 #scroll {
   /*overflow-y: scroll;*/ }
