@@ -52,15 +52,22 @@ nav {
     padding-left: 70px;
     font-size: 1.2em; }
 
-header img {
-  float: left;
-  height: 70px;
-  margin-right: 15px; }
-header h1 {
-  margin: 0;
-  line-height: 70px;
-  font-size: 32px;
-  color: #009303; }
+header {
+  height: 70px; }
+  header > img {
+    float: left;
+    height: 70px;
+    margin-right: 15px; }
+  header h1 {
+    float: left;
+    margin: 0;
+    line-height: 70px;
+    font-size: 32px;
+    color: #009303; }
+  header a img {
+    float: right;
+    margin: 20px;
+    width: 30px; }
 
 #scroll {
   /*overflow-y: scroll;*/ }

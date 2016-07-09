@@ -76,6 +76,7 @@
     <Content Include="assets\css\img\bg4.jpg" />
     <Content Include="assets\css\grid.css" />
     <Content Include="assets\css\img\bg_boat_b.jpg" />
+    <Content Include="assets\css\img\burger.svg" />
     <Content Include="assets\css\img\logo_m.svg" />
     <Content Include="assets\css\img\logo_red.svg" />
     <Content Include="assets\css\offcanvas.css" />
