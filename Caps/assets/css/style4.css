@@ -1,7 +1,4 @@
 html, body {
-  /*height: 90%;
-  background-color:antiquewhite;
-  overflow-y:scroll;*/
   margin: 0;
   padding: 0; }
 
@@ -17,6 +14,11 @@ article {
   margin: auto;
   width: 100%; }
 
+#top {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; }
+
 #home {
   background-image: url("img/bg_boat_b.jpg");
   height: 100%;
@@ -25,7 +27,10 @@ article {
 #intro {
   /*margin-top: 10%;*/
   text-align: center;
-  /*background-color: $background-color-bar;*/ }
+  /*background-color: $background-color-bar;*/
+  position: absolute;
+  width: 100%;
+  bottom: 1px; }
   #intro h2 {
     margin: 0;
     padding: 0;
@@ -57,7 +62,7 @@ nav {
     font-size: 1.2em; }
 
 .scrolled #intro {
-  display: none; }
+  /*display: none;*/ }
 .scrolled #top {
   position: fixed;
   width: 100%; }

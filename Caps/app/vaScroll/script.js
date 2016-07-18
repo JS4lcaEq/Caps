@@ -30,14 +30,12 @@
             var i = 0;
             $document.on("scroll", function (event) {
                 i++;
+                var s = window.pageYOffset;
 
-                console.log("$document scroll", event);
                 scope.$apply(function () {
-                //    var sc = $("body").scrollTop();
-                //    pages.home.setHeight();
-                //    //if (scope.vaGetScroll != sc) {
-                    scope.vaGetScroll = window.pageYOffset;
-                //    //}
+
+                    scope.vaGetScroll = s;
+
 
                 });
             });

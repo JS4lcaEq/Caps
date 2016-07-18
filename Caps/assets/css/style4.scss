@@ -2,9 +2,6 @@
 $background-dark-color-bar: rgba(15, 39, 66, 0.8);
 
 html, body {
-    /*height: 90%;
-    background-color:antiquewhite;
-    overflow-y:scroll;*/
     margin: 0;
     padding: 0;
 }
@@ -24,7 +21,11 @@ article {
     width: 100%;
 }
 
-
+#top {
+    position: fixed;
+    width: 100%;
+    z-index:1000;
+}
 
 #home {
     background-image: url('img/bg_boat_b.jpg');
@@ -36,6 +37,9 @@ article {
     /*margin-top: 10%;*/
     text-align: center;
     /*background-color: $background-color-bar;*/
+    position:absolute;
+    width: 100%;
+    bottom:1px;
     h2 {
         margin: 0;
         padding: 0;
@@ -76,7 +80,7 @@ nav {
 
 .scrolled {
     #intro {
-        display: none;
+        /*display: none;*/
     }
 
     #top {
