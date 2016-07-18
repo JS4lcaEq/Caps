@@ -3,6 +3,7 @@
     function MainCtrl($scope) {
         this.test = "test";
         this.scroll = 0;
+        this.opened = false;
         this.setScroll = 0;
         this.doScroll = function (scroll) {
             var self = this;

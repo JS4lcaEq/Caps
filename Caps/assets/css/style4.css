@@ -12,7 +12,8 @@ article {
   background-position: center; }
 
 .col {
-  margin: auto; }
+  margin: auto;
+  width: 100%; }
 
 #home {
   background-image: url("img/bg_boat_b.jpg");
@@ -27,19 +28,20 @@ article {
     margin: 0;
     padding: 0;
     font-size: 35vw;
-    color: rgba(15, 39, 66, 0.3); }
+    color: rgba(15, 39, 66, 0.4); }
 
 #debug {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.51);
   z-index: 1000;
   right: 0;
   bottom: 0;
-  font-size: 11px; }
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.5); }
 
 nav {
   color: white;
-  background-color: rgba(15, 39, 66, 0.3); }
+  background-color: rgba(15, 39, 66, 0.4); }
   nav ul {
     list-style: none;
     padding: 10px 0;
@@ -52,9 +54,27 @@ nav {
     padding-left: 70px;
     font-size: 1.2em; }
 
+.scrolled #intro {
+  display: none; }
+.scrolled #top {
+  position: fixed;
+  width: 100%; }
+  .scrolled #top header {
+    background-color: #000000;
+    width: 100%; }
+    .scrolled #top header a {
+      display: block; }
+  .scrolled #top nav {
+    display: none; }
+.scrolled #top.opened header {
+  /*background-color: transparent;*/ }
+.scrolled #top.opened nav {
+  display: block;
+  background-color: rgba(15, 39, 66, 0.8); }
+
 header {
   height: 70px; }
-  header > img {
+  header img {
     float: left;
     height: 70px;
     margin-right: 15px; }
@@ -64,16 +84,15 @@ header {
     line-height: 70px;
     font-size: 32px;
     color: #009303; }
-  header a img {
-    float: right;
-    margin: 15px;
-    width: 40px; }
-
-#scroll {
-  /*overflow-y: scroll;*/ }
+  header a {
+    display: none; }
+    header a img {
+      float: right;
+      margin: 15px;
+      height: 40px; }
 
 @media all and (min-width: 568px) {
-  header {
+  header .col {
     width: 80%;
     margin: auto; }
 
@@ -97,7 +116,7 @@ header {
         /*width: 20%;*/
         /*float: left;*/ } }
 @media all and (min-width: 992px) {
-  header {
+  header .col {
     width: 850px; }
 
   nav ul {

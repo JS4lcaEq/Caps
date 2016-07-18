@@ -17,15 +17,14 @@
 
         function link(scope, element, attr) {
 
-
             var trigger = false;
 
             var pages = { "home": newPage("home"), "about": newPage("about"), "gallery": newPage("gallery"), "contacts": newPage("contacts") };
 
-            scope.$watch("vaSetScroll", function () {
-                console.log(scope.vaSetScroll)
-                //element.scrollTop(scope.vaSetScroll);
-            });
+            //scope.$watch("vaSetScroll", function () {
+            //    //console.log(scope.vaSetScroll)
+            //    //element.scrollTop(scope.vaSetScroll);
+            //});
 
 
 
@@ -35,7 +34,7 @@
                     var sc = $document.scrollTop();
                     pages.home.setHeight();
                     //if (scope.vaGetScroll != sc) {
-                    scope.vaGetScroll = { "current": sc, "pages": pages };
+                    scope.vaGetScroll = sc;
                     //}
 
                 });
