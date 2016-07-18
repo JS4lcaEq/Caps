@@ -27,15 +27,17 @@
             //});
 
 
-
+            var i = 0;
             $document.on("scroll", function (event) {
-                //console.log("$document scroll");
+                i++;
+
+                console.log("$document scroll", event);
                 scope.$apply(function () {
-                    var sc = $document.scrollTop();
-                    pages.home.setHeight();
-                    //if (scope.vaGetScroll != sc) {
-                    scope.vaGetScroll = sc;
-                    //}
+                //    var sc = $("body").scrollTop();
+                //    pages.home.setHeight();
+                //    //if (scope.vaGetScroll != sc) {
+                    scope.vaGetScroll = window.pageYOffset;
+                //    //}
 
                 });
             });
