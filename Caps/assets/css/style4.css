@@ -35,6 +35,7 @@ article {
     margin: 0;
     padding: 0;
     font-size: 35vw;
+    line-height: 30vw;
     color: rgba(15, 39, 66, 0.4); }
 
 #debug {
@@ -123,6 +124,33 @@ header {
         /*width: 20%;*/
         /*float: left;*/ } }
 @media all and (min-width: 992px) {
+  .scrolled #top.opened nav {
+    background-color: #000; }
+  .scrolled #top {
+    background-color: #000; }
+    .scrolled #top > .col {
+      width: 850px;
+      height: 50px;
+      margin: auto; }
+    .scrolled #top nav {
+      width: auto;
+      display: block;
+      float: left;
+      background-color: #000;
+      margin-left: 10px; }
+      .scrolled #top nav a {
+        line-height: 50px; }
+      .scrolled #top nav ul {
+        height: auto;
+        width: 650px; }
+    .scrolled #top header {
+      width: auto;
+      float: left; }
+      .scrolled #top header .col {
+        width: auto; }
+      .scrolled #top header a {
+        display: none; }
+
   header .col {
     width: 850px; }
 
@@ -131,10 +159,5 @@ header {
 
   article > .col {
     width: 850px; } }
-/*@media all and (min-width: 768px) {
-    .col {
-        width: 80%;
-    }
-}*/
 
 /*# sourceMappingURL=style4.css.map */

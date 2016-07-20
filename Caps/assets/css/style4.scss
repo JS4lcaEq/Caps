@@ -24,7 +24,7 @@ article {
 #top {
     position: fixed;
     width: 100%;
-    z-index:1000;
+    z-index: 1000;
 }
 
 #home {
@@ -37,13 +37,15 @@ article {
     /*margin-top: 10%;*/
     text-align: center;
     /*background-color: $background-color-bar;*/
-    position:absolute;
+    position: absolute;
     width: 100%;
-    bottom:1px;
+    bottom: 1px;
+
     h2 {
         margin: 0;
         padding: 0;
         font-size: 35vw;
+        line-height: 30vw;
         color: $background-color-bar;
     }
 }
@@ -185,6 +187,52 @@ header {
 }
 
 @media all and (min-width: 992px) {
+    .scrolled {
+        #top.opened nav {
+            background-color: #000;
+        }
+
+        #top {
+            background-color: #000;
+
+            > .col {
+                width: 850px;
+                height: 50px;
+                margin: auto;
+            }
+
+            nav {
+                width: auto;
+                display: block;
+                float: left;
+                background-color: #000;
+                margin-left: 10px;
+
+                a {
+                    line-height: 50px;
+                }
+
+                ul {
+                    height: auto;
+                    width: 650px;
+                }
+            }
+
+            header {
+                width: auto;
+                float: left;
+
+                .col {
+                    width: auto;
+                }
+
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+
     header .col {
         width: 850px;
     }
@@ -197,9 +245,3 @@ header {
         width: 850px;
     }
 }
-
-/*@media all and (min-width: 768px) {
-    .col {
-        width: 80%;
-    }
-}*/

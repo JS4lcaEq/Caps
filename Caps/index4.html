@@ -37,22 +37,23 @@
 
     <article id="home" class="page">
         <div id="top" ng-class="{'opened': ctrl.opened}">
-
-            <header>
-                <div class="col">
-                    <img src="assets/css/img/logo2.svg" alt="'VA' - site logo" />
-                    <h1>SELF</h1>
-                    <a ng-click="ctrl.opened = !ctrl.opened"><img src="assets/css/img/burger.svg" /></a>
-                </div>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="#home" ng-click="ctrl.doScroll(10)">Home</a></li>
-                    <li><a href="#about" ng-click="ctrl.doScroll(1000)">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
+            <div class="col">
+                <header>
+                    <div class="col">
+                        <img src="assets/css/img/logo2.svg" alt="'VA' - site logo" />
+                        <h1>SELF</h1>
+                        <a ng-click="ctrl.opened = !ctrl.opened"><img src="assets/css/img/burger.svg" /></a>
+                    </div>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="#home" ng-click="ctrl.doScroll(10)">Home</a></li>
+                        <li><a href="#about" ng-click="ctrl.doScroll(1000)">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
 
