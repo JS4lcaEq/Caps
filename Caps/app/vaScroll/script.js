@@ -8,7 +8,7 @@
             return {
                 "id": id
                 , "element": $document.find("#"+id)
-                , "hght": 0
+                , "hght": 0//$document.find("#"+id).height()
                 , "setHeight": function () {
                     this["hght"] = this["element"].height();
                 }

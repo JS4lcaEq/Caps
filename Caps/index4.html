@@ -78,7 +78,16 @@
         <div class="col">
             <h2>Gallery</h2>
             <p>2</p>
+            <img src="assets/css/img/Gallery/27S_.jpg" />
+            <img src="assets/css/img/Gallery/16S_.jpg" />
+            <img src="assets/css/img/Gallery/11S_.jpg" />
+            <img src="assets/css/img/Gallery/28S_.jpg" />
+            <img src="assets/css/img/Gallery/29S_.jpg" />
+            <img src="assets/css/img/Gallery/3S_.jpg" />
+            <img src="assets/css/img/Gallery/4S_.jpg" />
+            <img src="assets/css/img/Gallery/9S_.jpg" />
         </div>
+        <div id="big_img"></div>
     </article>
 
     <article id="contacts" class="page">
@@ -93,9 +102,12 @@
     </footer>
 
 
-    <va-scroll- va-get-scroll="ctrl.scroll"></va-scroll->
 
-    <div id="debug"><p>Debug:  scroll={{ctrl.scroll}}; opened={{ctrl.opened}} test={{ctrl.test}}</p></div>
+
+    <div id="debug">
+        <p>Debug:  scroll={{ctrl.scroll}}; opened={{ctrl.opened}} test={{ctrl.test}}</p>
+        <p>home:{{ctrl.pages.home}} / {{ctrl.pages.length}} 1111</p>
+    </div>
     <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -105,7 +117,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="Scripts/angular.min.js"></script>
-    <script src="app/vaScroll/script.js"></script>
+    <!--<script src="app/vaScroll/script.js"></script>-->
     <script src="app/app.js"></script>
     <script>angular.bootstrap("html", ['app']);</script>
 </body>
