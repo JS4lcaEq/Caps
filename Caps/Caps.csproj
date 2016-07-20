@@ -72,10 +72,12 @@
     <Content Include="app\vaDirectiveVirtualRepeater\style.css" />
     <Content Include="app\vaDirectiveVirtualRepeater\template.html" />
     <Content Include="app\vaScroll\script.js" />
+    <Content Include="assets\css\img\27Ss.jpg" />
     <Content Include="assets\css\img\bg3.jpg" />
     <Content Include="assets\css\img\bg4.jpg" />
     <Content Include="assets\css\grid.css" />
     <Content Include="assets\css\img\bg_boat_b.jpg" />
+    <Content Include="assets\css\img\bg_boat_b05.jpg" />
     <Content Include="assets\css\img\burger.svg" />
     <Content Include="assets\css\img\logo_m.svg" />
     <Content Include="assets\css\img\logo_red.svg" />

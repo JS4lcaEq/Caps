@@ -12,8 +12,8 @@ body {
 
 article {
     min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+    background-size:100vw;
+    background-position: center top;
 }
 
 .col {
@@ -32,7 +32,7 @@ article {
 }
 
 #home {
-    background-image: url('img/bg_boat_b.jpg');
+    background-image: url('img/27Ss.jpg');
     height: 100%;
     overflow: hidden;
 }
@@ -214,7 +214,7 @@ header {
                 display: block;
                 float: left;
                 background-color: #000;
-                margin-left: 10px;
+                margin-left: 50px;
 
                 a {
                     line-height: 50px;
