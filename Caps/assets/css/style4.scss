@@ -12,8 +12,9 @@ body {
 
 article {
     min-height: 100vh;
-    background-size:100vw;
+    background-size: cover;
     background-position: center top;
+    background-repeat:no-repeat;
 }
 
 .col {
@@ -32,9 +33,10 @@ article {
 }
 
 #home {
-    background-image: url('img/27Ss.jpg');
+    background-image: url('img/27.jpg');
     height: 100%;
     overflow: hidden;
+    background-color:#fefcf0;
 }
 
 #intro {
