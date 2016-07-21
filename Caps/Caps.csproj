@@ -135,6 +135,7 @@
     <Content Include="assets\css\style5.css.map" />
     <Content Include="assets\css\fonts\bankgothic-lt-bt-light.ttf" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
