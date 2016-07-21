@@ -32,26 +32,26 @@
     
 </head>
 
-<body><!-- ng-class-="{'scrolled': ctrl.scroll > 0}" -->
+<body>
 
     
 
         <article id="home" class="page">
-            <div id="top" ng-class="{'opened': ctrl.opened}">
+            <div id="top">  <!--ng-class="{'opened': ctrl.opened}"-->
                 <div class="col">
                     <header>
                         <div class="col">
                             <img src="assets/css/img/logo2.svg" alt="'VA' - site logo" />
                             <h1>SELF</h1>
-                            <a ng-click="ctrl.opened = !ctrl.opened"><img src="assets/css/img/burger.svg" /></a>
+                            <a><img src="assets/css/img/burger.svg" /></a> <!--ng-click="ctrl.opened = !ctrl.opened"-->
                         </div>
                     </header>
                     <nav>
                         <ul>
-                            <li ng-class="{'active': ctrl.active.id == 'home'}"><a href="#home">Home</a></li>
-                            <li ng-class="{'active': ctrl.active.id == 'about'}"><a href="#about">About</a></li>
-                            <li ng-class="{'active': ctrl.active.id == 'gallery'}"><a href="#gallery">Gallery</a></li>
-                            <li ng-class="{'active': ctrl.active.id == 'contacts'}"><a href="#contacts">Contacts</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -78,7 +78,7 @@
         <article id="gallery" class="page">
             <div class="col">
                 <h2>Gallery</h2>
-                <p>{{ctrl.bigViewSrc}}</p>
+                <p></p>
                 <img src="assets/css/img/Gallery/27S_.jpg" />
                 <img src="assets/css/img/Gallery/16S_.jpg" />
                 <img src="assets/css/img/Gallery/11S_.jpg" />
@@ -103,7 +103,7 @@
             VA © 2016.
         </footer>
 
-    <ng-controller ng-controller-="MainCtrl as ctrl"></ng-controller>
+    <!--<ng-controller ng-controller-="MainCtrl as ctrl"></ng-controller>-->
     
 
     <!--<div id="debug">
@@ -119,10 +119,10 @@
     <!--<script src="Scripts/bootstrap.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="Scripts/angular.min.js"></script>
-    <!--<script src="app/vaScroll/script.js"></script>-->
+    <!--<script src="Scripts/angular.min.js"></script>
+    <script src="app/vaScroll/script.js"></script>
     <script src="app/app.js"></script>
-    <script>angular.bootstrap("html", ['app']);</script>
+    <script>angular.bootstrap("html", ['app']);</script>-->
     <script src="Scripts/app.js"></script>
 </body>
 </html>
