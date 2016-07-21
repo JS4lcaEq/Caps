@@ -47,10 +47,10 @@
                 </header>
                 <nav>
                     <ul>
-                        <li><a href="#home" ng-click="ctrl.doScroll(10)">Home</a></li>
-                        <li><a href="#about" ng-click="ctrl.doScroll(1000)">About</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
+                        <li ng-class="{'active': ctrl.active.id == 'home'}"><a href="#home">Home</a></li>
+                        <li ng-class="{'active': ctrl.active.id == 'about'}"><a href="#about">About</a></li>
+                        <li ng-class="{'active': ctrl.active.id == 'gallery'}"><a href="#gallery">Gallery</a></li>
+                        <li ng-class="{'active': ctrl.active.id == 'contacts'}"><a href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -77,7 +77,7 @@
     <article id="gallery" class="page">
         <div class="col">
             <h2>Gallery</h2>
-            <p>2</p>
+            <p>{{ctrl.bigViewSrc}}</p>
             <img src="assets/css/img/Gallery/27S_.jpg" />
             <img src="assets/css/img/Gallery/16S_.jpg" />
             <img src="assets/css/img/Gallery/11S_.jpg" />
@@ -86,6 +86,7 @@
             <img src="assets/css/img/Gallery/3S_.jpg" />
             <img src="assets/css/img/Gallery/4S_.jpg" />
             <img src="assets/css/img/Gallery/9S_.jpg" />
+            <div id="big_view" style="background-image: url('{{ctrl.bigViewSrc}}')" >big_view big_view big_view big_view</div>
         </div>
         <div id="big_img"></div>
     </article>
@@ -104,10 +105,11 @@
 
 
 
-    <div id="debug">
+    <!--<div id="debug">
         <p>Debug:  scroll={{ctrl.scroll}}; opened={{ctrl.opened}} test={{ctrl.test}}</p>
-        <p>home:{{ctrl.pages.home}} / {{ctrl.pages.length}} 1111</p>
-    </div>
+        <p ng-repeat="item in ctrl.pages">{{item.id}} {{item.hght}} / {{item.start}} / {{item.end}}</p>
+        <p>ctrl.active: {{ctrl.active}}</p>
+    </div>-->
     <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->

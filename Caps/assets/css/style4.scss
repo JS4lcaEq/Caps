@@ -67,12 +67,12 @@ article {
 
 #debug {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.51);
+    background-color: rgba(255, 255, 255, 0.1);
     z-index: 1000;
     right: 0;
     bottom: 0;
     font-size: 11px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 nav {
@@ -92,6 +92,13 @@ nav {
         line-height: 40px;
         padding-left: 70px;
         font-size: 1.2em;
+        font-weight:bold;
+    }
+
+    .active {
+        a {
+            color: rgb(0, 147, 3);
+        }
     }
 }
 
@@ -207,6 +214,16 @@ header {
     #gallery img {
         width: 22%;
     }
+
+    #big_view {
+        position:fixed;
+        top: 10px;
+        left: 10px;
+        width: 200px;
+        height: 200px;
+        background-image: url('img/Gallery/29S_.jpg');
+        background-size:contain;
+    }
 }
 
 @media all and (min-width: 992px) {
@@ -216,7 +233,7 @@ header {
         }
 
         #top {
-            background-color:$scrolled-bar-color;
+            background-color: $scrolled-bar-color;
 
             > .col {
                 width: 850px;
