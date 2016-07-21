@@ -29,12 +29,12 @@
       <script src="assets/js/html5shiv.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-
+    <ng-controller ng-controller="MainCtrl as ctrl"></ng-controller>
 </head>
 
 <body><!-- ng-class-="{'scrolled': ctrl.scroll > 0}" -->
 
-    <ng-controller ng-controller="MainCtrl as ctrl">
+    
 
         <article id="home" class="page">
             <div id="top" ng-class="{'opened': ctrl.opened}">
@@ -104,7 +104,7 @@
         </footer>
 
 
-    </ng-controller>
+    
 
     <!--<div id="debug">
         <p>Debug:  scroll={{ctrl.scroll}}; opened={{ctrl.opened}} test={{ctrl.test}}</p>
