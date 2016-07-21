@@ -32,78 +32,79 @@
 
 </head>
 
-<body ng-controller="MainCtrl as ctrl" ng-class="{'scrolled': ctrl.scroll > 0}">
+<body><!-- ng-class-="{'scrolled': ctrl.scroll > 0}" -->
 
+    <ng-controller ng-controller="MainCtrl as ctrl">
 
-    <article id="home" class="page">
-        <div id="top" ng-class="{'opened': ctrl.opened}">
-            <div class="col">
-                <header>
-                    <div class="col">
-                        <img src="assets/css/img/logo2.svg" alt="'VA' - site logo" />
-                        <h1>SELF</h1>
-                        <a ng-click="ctrl.opened = !ctrl.opened"><img src="assets/css/img/burger.svg" /></a>
-                    </div>
-                </header>
-                <nav>
-                    <ul>
-                        <li ng-class="{'active': ctrl.active.id == 'home'}"><a href="#home">Home</a></li>
-                        <li ng-class="{'active': ctrl.active.id == 'about'}"><a href="#about">About</a></li>
-                        <li ng-class="{'active': ctrl.active.id == 'gallery'}"><a href="#gallery">Gallery</a></li>
-                        <li ng-class="{'active': ctrl.active.id == 'contacts'}"><a href="#contacts">Contacts</a></li>
-                    </ul>
-                </nav>
+        <article id="home" class="page">
+            <div id="top" ng-class="{'opened': ctrl.opened}">
+                <div class="col">
+                    <header>
+                        <div class="col">
+                            <img src="assets/css/img/logo2.svg" alt="'VA' - site logo" />
+                            <h1>SELF</h1>
+                            <a ng-click="ctrl.opened = !ctrl.opened"><img src="assets/css/img/burger.svg" /></a>
+                        </div>
+                    </header>
+                    <nav>
+                        <ul>
+                            <li ng-class="{'active': ctrl.active.id == 'home'}"><a href="#home">Home</a></li>
+                            <li ng-class="{'active': ctrl.active.id == 'about'}"><a href="#about">About</a></li>
+                            <li ng-class="{'active': ctrl.active.id == 'gallery'}"><a href="#gallery">Gallery</a></li>
+                            <li ng-class="{'active': ctrl.active.id == 'contacts'}"><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
 
 
 
 
-        <div id="intro">
-            <h2>SELF</h2>
-            <p></p>
-        </div>
+            <div id="intro">
+                <h2>SELF</h2>
+                <p></p>
+            </div>
 
 
-    </article>
+        </article>
 
-    <article id="about" class="page">
-        <div class="col">
-            <h2>About</h2>
-            <p>And about photos. It's me.</p>
-        </div>
-    </article>
+        <article id="about" class="page">
+            <div class="col">
+                <h2>About</h2>
+                <p>And about photos. It's me.</p>
+            </div>
+        </article>
 
-    <article id="gallery" class="page">
-        <div class="col">
-            <h2>Gallery</h2>
-            <p>{{ctrl.bigViewSrc}}</p>
-            <img src="assets/css/img/Gallery/27S_.jpg" />
-            <img src="assets/css/img/Gallery/16S_.jpg" />
-            <img src="assets/css/img/Gallery/11S_.jpg" />
-            <img src="assets/css/img/Gallery/28S_.jpg" />
-            <img src="assets/css/img/Gallery/29S_.jpg" />
-            <img src="assets/css/img/Gallery/3S_.jpg" />
-            <img src="assets/css/img/Gallery/4S_.jpg" />
-            <img src="assets/css/img/Gallery/9S_.jpg" />
-            <div id="big_view" style="background-image: url('{{ctrl.bigViewSrc}}')" >big_view big_view big_view big_view</div>
-        </div>
-        <div id="big_img"></div>
-    </article>
+        <article id="gallery" class="page">
+            <div class="col">
+                <h2>Gallery</h2>
+                <p>{{ctrl.bigViewSrc}}</p>
+                <img src="assets/css/img/Gallery/27S_.jpg" />
+                <img src="assets/css/img/Gallery/16S_.jpg" />
+                <img src="assets/css/img/Gallery/11S_.jpg" />
+                <img src="assets/css/img/Gallery/28S_.jpg" />
+                <img src="assets/css/img/Gallery/29S_.jpg" />
+                <img src="assets/css/img/Gallery/3S_.jpg" />
+                <img src="assets/css/img/Gallery/4S_.jpg" />
+                <img src="assets/css/img/Gallery/9S_.jpg" />
+                <div id="big_view" style="background-image: url('{{ctrl.bigViewSrc}}')">big_view big_view big_view big_view</div>
+            </div>
+            <div id="big_img"></div>
+        </article>
 
-    <article id="contacts" class="page">
-        <div class="col">
-            <h2>Contacts</h2>
-            <p>3</p>
-        </div>
-    </article>
+        <article id="contacts" class="page">
+            <div class="col">
+                <h2>Contacts</h2>
+                <p>3</p>
+            </div>
+        </article>
 
-    <footer>
-        VA © 2016.
-    </footer>
+        <footer>
+            VA © 2016.
+        </footer>
 
 
-
+    </ng-controller>
 
     <!--<div id="debug">
         <p>Debug:  scroll={{ctrl.scroll}}; opened={{ctrl.opened}} test={{ctrl.test}}</p>

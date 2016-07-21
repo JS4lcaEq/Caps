@@ -4,6 +4,8 @@
 
     function MainCtrl($scope, $document, $interval) {
 
+        var elements = {body: $document.find("body")};
+
         function newPage(id) {
             return {
                 "id": id
@@ -65,10 +67,10 @@
             if (!ctrl.bussy) {
                 ctrl.bussy = true;
                 $interval(function () {
-                    //console.log("ctrl scroll!!!");
+                    
                     var s = window.pageYOffset;
-                        ctrl.test = s;
-                        ctrl.scroll = s;
+                    console.log("ctrl scroll!!!", s);    
+                        
                         ctrl.active = getActive(ctrl.pages, ctrl.scroll);
                         ctrl.bussy = false;
                 }, 50, 1);
