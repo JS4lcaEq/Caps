@@ -29,88 +29,71 @@
       <script src="assets/js/html5shiv.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-    
+
 </head>
 
 <body>
 
-    
-
-        <article id="home" class="page">
-            <div id="top">  <!--ng-class="{'opened': ctrl.opened}"-->
-                <div class="col">
-                    <header>
-                        <div class="col">
-                            <img src="assets/css/img/logo2.svg" alt="'VA' - site logo" />
-                            <h1>SELF</h1>
-                            <a><img src="assets/css/img/burger.svg" /></a> <!--ng-click="ctrl.opened = !ctrl.opened"-->
-                        </div>
-                    </header>
-                    <nav>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
-
-
-
-            <div id="intro">
-                <h2>SELF</h2>
-                <p></p>
-            </div>
-
-
-        </article>
-
-        <article id="about" class="page">
+    <article id="home" class="page">
+        <div id="top">
             <div class="col">
-                <h2>About</h2>
-                <p>And about photos. It's me.</p>
+                <header>
+                    <div class="col">
+                        <img src="assets/css/img/logo2.svg" alt="'VA' - site logo" />
+                        <h1>SELF</h1>
+                        <a><img src="assets/css/img/burger.svg" /></a>
+                    </div>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
             </div>
-        </article>
+        </div>
+        <div id="intro">
+            <h2>SELF</h2>
+            <p></p>
+        </div>
+    </article>
 
-        <article id="gallery" class="page">
-            <div class="col">
-                <h2>Gallery</h2>
-                <p></p>
-                <img src="assets/css/img/Gallery/27S_.jpg" />
-                <img src="assets/css/img/Gallery/16S_.jpg" />
-                <img src="assets/css/img/Gallery/11S_.jpg" />
-                <img src="assets/css/img/Gallery/28S_.jpg" />
-                <img src="assets/css/img/Gallery/29S_.jpg" />
-                <img src="assets/css/img/Gallery/3S_.jpg" />
-                <img src="assets/css/img/Gallery/4S_.jpg" />
-                <img src="assets/css/img/Gallery/9S_.jpg" />
-                <div id="big_view" style="background-image: url('{{ctrl.bigViewSrc}}')">big_view big_view big_view big_view</div>
-            </div>
-            <div id="big_img"></div>
-        </article>
+    <article id="about" class="page">
+        <div class="col">
+            <h2>About</h2>
+            <p>And about photos. It's me.</p>
+        </div>
+    </article>
 
-        <article id="contacts" class="page">
-            <div class="col">
-                <h2>Contacts</h2>
-                <p>3</p>
-            </div>
-        </article>
+    <article id="gallery" class="page">
+        <div class="col">
+            <h2>Gallery</h2>
+            <p></p>
+            <img src="assets/css/img/Gallery/27S_.jpg" />
+            <img src="assets/css/img/Gallery/16S_.jpg" />
+            <img src="assets/css/img/Gallery/11S_.jpg" />
+            <img src="assets/css/img/Gallery/28S_.jpg" />
+            <img src="assets/css/img/Gallery/29S_.jpg" />
+            <img src="assets/css/img/Gallery/3S_.jpg" />
+            <img src="assets/css/img/Gallery/4S_.jpg" />
+            <img src="assets/css/img/Gallery/9S_.jpg" />
+            <div id="big_view">big_view big_view big_view </div>
+        </div>
+    </article>
 
-        <footer>
-            VA © 2016.
-        </footer>
+    <article id="contacts" class="page">
+        <div class="col">
+            <h2>Contacts</h2>
+            <p>3</p>
+        </div>
+    </article>
 
-    <!--<ng-controller ng-controller-="MainCtrl as ctrl"></ng-controller>-->
-    
+    <footer>
+        VA © 2016.
+    </footer>
 
-    <!--<div id="debug">
-        <p>Debug:  scroll={{ctrl.scroll}}; opened={{ctrl.opened}} test={{ctrl.test}}</p>
-        <p ng-repeat="item in ctrl.pages">{{item.id}} {{item.hght}} / {{item.start}} / {{item.end}}</p>
-        <p>ctrl.active: {{ctrl.active}}</p>
-    </div>-->
     <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
