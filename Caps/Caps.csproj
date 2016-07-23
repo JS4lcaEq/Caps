@@ -101,8 +101,6 @@
     <Content Include="assets\css\style5.css" />
     <Content Include="assets\js\offcanvas.js" />
     <Content Include="bootstrap4.html" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="assets\css\img\favicon.ico" />
     <Content Include="assets\css\img\favicon_1.ico" />
@@ -129,8 +127,6 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
     <Content Include="assets\css\style5.scss" />
     <Content Include="assets\css\style5.css.map" />
     <Content Include="assets\css\fonts\bankgothic-lt-bt-light.ttf" />
