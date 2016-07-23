@@ -48,7 +48,7 @@ article {
     padding: 0;
     font-size: 35vw;
     line-height: 30vw;
-    color: rgba(15, 39, 66, 0.4); }
+    color: rgba(15, 39, 66, 0.8); }
 
 #debug {
   position: fixed;
@@ -61,7 +61,7 @@ article {
 
 nav {
   color: white;
-  background-color: rgba(15, 39, 66, 0.4); }
+  background-color: rgba(15, 39, 66, 0.8); }
   nav ul {
     list-style: none;
     padding: 10px 0;
