@@ -107,17 +107,31 @@
 
 
 
-    $(document).on("scroll", function (e) {
+    $(document).on("scroll", function () {
         if (bussy) {
             return;
         }
         bussy = true;
-
         var timer = setTimeout(function () {
             onScroll();
+            console.log("scroll slow");
             bussy = false;
-        }, 50);
+        }, 100);
 
+    });
+
+    $(window).on("resize", function () {
+        //console.log("resize");
+        if (bussy) {
+            return;
+        }
+        bussy = true;
+        var timer = setTimeout(function () {
+            console.log("resize slow");
+            setHeight(pages);
+            onScroll();
+            bussy = false;
+        }, 100);
     });
 
     onScroll();

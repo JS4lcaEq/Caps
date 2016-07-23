@@ -18,6 +18,12 @@ article {
     background-repeat: no-repeat;
 }
 
+footer {
+    margin-top: -30px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
 .col {
     margin: auto;
     width: 100%;
@@ -221,7 +227,7 @@ header {
         position: fixed;
         top: 0;
         left: 0;
-        z-index:1000;
+        z-index: 1000;
         width: 100vw;
         height: 100vh;
         background-image: url('img/Gallery/29S.jpg');
@@ -231,6 +237,7 @@ header {
         background-color: #000;
         display: none;
     }
+
     #big_view.opened {
         display: block;
     }

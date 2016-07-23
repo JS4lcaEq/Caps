@@ -11,6 +11,11 @@ article {
   background-position: center top;
   background-repeat: no-repeat; }
 
+footer {
+  margin-top: -30px;
+  text-align: center;
+  font-size: 0.9em; }
+
 .col {
   margin: auto;
   width: 100%; }
