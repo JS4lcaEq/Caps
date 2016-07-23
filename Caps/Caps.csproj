@@ -95,6 +95,7 @@
     <Content Include="assets\css\img\Gallery\4S_.jpg" />
     <Content Include="assets\css\img\Gallery\9S.jpg" />
     <Content Include="assets\css\img\Gallery\9S_.jpg" />
+    <Content Include="assets\css\img\logo2_bold.svg" />
     <Content Include="assets\css\img\logo_m.svg" />
     <Content Include="assets\css\img\logo_red.svg" />
     <Content Include="assets\css\offcanvas.css" />
@@ -102,7 +103,6 @@
     <Content Include="assets\js\offcanvas.js" />
     <Content Include="bootstrap4.html" />
     <Content Include="favicon.ico" />
-    <Content Include="assets\css\img\favicon.ico" />
     <Content Include="assets\css\img\favicon_1.ico" />
     <Content Include="assets\css\img\favicon_old.ico" />
     <Content Include="assets\js\html5shiv.min.js" />
