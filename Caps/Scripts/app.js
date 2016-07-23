@@ -2,6 +2,8 @@
 
     var bussy = false;
 
+    var menuOpened = false;
+
     var elements = { body: $("body"), bigView: $("#big_view") };
 
     function setBody(scroll) {
@@ -82,6 +84,22 @@
     }
 
     galleryIni("#gallery img", "#big_view");
+
+    function menuSwitchIni(switchSelector, boxSelector) {
+        var trigger = false;
+        var target = $(boxSelector);
+        $(switchSelector).on("click", function () {
+            trigger = !trigger;
+            console.log("menu:", trigger);
+            if (trigger) {
+                target.addClass("opened");
+            } else {
+                target.removeClass("opened");
+            }
+        });
+    }
+
+    menuSwitchIni("header a", "#top")
 
     var pages = [newPage("home"), newPage("about"), newPage("gallery"), newPage("contacts")];
 

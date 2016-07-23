@@ -1,6 +1,6 @@
 ﻿$background-color-bar: rgba(15, 39, 66, 0.7);
-$background-dark-color-bar: rgba(15, 39, 66, 0.8);
-$scrolled-bar-color: rgb(72, 72, 72);
+$background-dark-color-bar: rgba(15, 39, 66, 0.7);
+$scrolled-bar-color: rgb(0, 0, 0);
 
 html, body {
     margin: 0;
@@ -92,12 +92,14 @@ nav {
         line-height: 40px;
         padding-left: 70px;
         font-size: 1.2em;
-        font-weight: bold;
+        /*font-weight: bold;*/
     }
 
     .active {
         a {
-            color: rgb(212, 255, 195);
+            /*color: rgb(212, 255, 195);*/
+            /*font-size: 1.4em;*/
+            font-weight: bold;
         }
     }
 }
