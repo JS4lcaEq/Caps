@@ -27,7 +27,7 @@
 
 <body>
 
-    <article id="home" class="page">
+    <section id="home" class="page">
 
         <div id="top">
             <div class="col">
@@ -57,46 +57,146 @@
             <p></p>
         </div>
 
-    </article>
+    </section>
 
-    <article id="about" class="page">
+    <section id="about" class="page">
         <div class="col">
-            <h2>Target</h2>
-            <p>This is "Web Design for Everyone" Capstone.</p>
-            <h2>How It's Made</h2>
-            <p></p>
-            <h2>Validation</h2>
+            <h2>About</h2>
+            <h3>Target</h3>
+            <p>This is the Web Design for Everyone Capstone.</p>
+            <p>
+                This site illustrates the web-design process.
+            </p>
+            <p>
+                I chose "designed from scratch" version of the learning task.
+            </p>
+            <h3>How It's Made</h3>
+            <p>I need to comment some solutions.</p>
+            <p>
+                I used SASS compiler to create CSS file.
+                You can find the source CSS code <a href="assets/css/style.scss">here</a>
+            </p>
+
+            <p>There is 5 layer of containers at the Header block to create 3 different views.</p>
+            <pre>
+&lt;div id="top"&gt;
+    &lt;div class="col"&gt;
+        &lt;header&gt;
+            &lt;div class="col"&gt;
+                &lt;img class="logo" 
+                        src="assets/css/img/logo2.svg" 
+                        alt="site logotype: VA" /&gt;
+                &lt;h1&gt;SELF&lt;/h1&gt;
+                &lt;a&gt;
+                    &lt;img src="assets/css/img/burger.svg" 
+                            alt="show/hide menu switch" /&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/header&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#gallery"&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contacts"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            <p>I used "float" style to controls bloks position.</p>
+            <p>And I used a new fashion "display:flex" style in "nav" section. It works very well!</p>
+
+            <pre>
+ul {
+    height: 70px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+            </pre>
+            <p>"background-size:contain" style is useful for adjusting the image to fit the screen size.</p>
+            <pre>
+#big_view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/load.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    display: none;
+    cursor: pointer;
+}
+
+            </pre>
+            <p>Java script monitored browsers events.</p>
+            <pre>
+$(document).on("scroll", function () {
+        if (bussyScroll) {
+            return;
+        }
+        bussyScroll = true;
+        setTimeout(function () {
+            onScroll();
+            bussyScroll = false;
+        }, 100);
+});
+$(window).on("resize", function () {
+        if (bussyResize) {
+            return;
+        }
+        bussyResize = true;
+        setTimeout(function () {
+            setHeight(pages);
+            onScroll();
+            bussyResize = false;
+        }, 100);
+});
+            </pre>
+            <p>I used the function "setTimeout" to reduce CPU load. </p>
+
+            <h3>Validation</h3>
             <p>You can check out this site here:</p>
             <ul>
                 <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fjs4lcaeq.github.io%2FCaps%2FCaps%2Findex.html">W3C</a></li>
                 <li><a href="http://wave.webaim.org/report#/http://js4lcaeq.github.io/Caps/Caps/index.html">WAVE</a></li>
             </ul>
-            <p>And about photos. It's me.</p>
+            
         </div>
-    </article>
-
-    <article id="gallery" class="page">
+        
+    </section>
+    <hr />
+    <section id="gallery" class="page">
         <div class="col">
-            <h2>Family</h2>
+            <h2>Gallery</h2>
             <p>My friend made for me some family photos in 2016.</p>
             <img src="assets/css/img/Gallery/27S_.jpg" alt="Gallery: me and my wife" />
             <img src="assets/css/img/Gallery/16S_.jpg" alt="Gallery: me, my wife and my child, old-fashioned" />
             <img src="assets/css/img/Gallery/11S_.jpg" alt="Gallery: me and my wife, b/w, on the suitcases, old-fashioned" />
             <img src="assets/css/img/Gallery/28S_.jpg" alt="Gallery: me, my wife and my child" />
-            <img src="assets/css/img/Gallery/29S_.jpg" alt="Gallery: my child and babysitter"  />
-            <img src="assets/css/img/Gallery/3S_.jpg" alt="Gallery: me, my wife and my child, on the chair #1"  />
-            <img src="assets/css/img/Gallery/4S_.jpg" alt="Gallery: me, my wife and my child, on the chair #2"  />
-            <img src="assets/css/img/Gallery/9S_.jpg" alt="Gallery: me, my wife and my child, b/w, old-fashioned"  />
+            <img src="assets/css/img/Gallery/29S_.jpg" alt="Gallery: my child and babysitter" />
+            <img src="assets/css/img/Gallery/3S_.jpg" alt="Gallery: me, my wife and my child, on the chair #1" />
+            <img src="assets/css/img/Gallery/4S_.jpg" alt="Gallery: me, my wife and my child, on the chair #2" />
+            <img src="assets/css/img/Gallery/9S_.jpg" alt="Gallery: me, my wife and my child, b/w, old-fashioned" />
             <div id="big_view"></div>
         </div>
-    </article>
-
-    <article id="contacts" class="page">
+        
+    </section>
+    <hr />
+    <section id="contacts" class="page">
         <div class="col">
             <h2>Contacts</h2>
-            <p>3</p>
+            <p>You can send e-mail to me: condorrr@gmail.com</p>
         </div>
-    </article>
+
+    </section>
 
     <footer>
         VA © 2016.

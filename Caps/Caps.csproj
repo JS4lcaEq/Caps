@@ -100,6 +100,7 @@
     <Content Include="assets\css\img\logo_m.svg" />
     <Content Include="assets\css\img\logo_red.svg" />
     <Content Include="assets\css\offcanvas.css" />
+    <Content Include="assets\css\style.css" />
     <Content Include="assets\css\style5.css" />
     <Content Include="assets\js\offcanvas.js" />
     <Content Include="bootstrap4.html" />
@@ -131,6 +132,7 @@
     <Content Include="assets\css\style5.scss" />
     <Content Include="assets\css\style5.css.map" />
     <Content Include="assets\css\fonts\bankgothic-lt-bt-light.ttf" />
+    <Content Include="assets\css\style.css.map" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />

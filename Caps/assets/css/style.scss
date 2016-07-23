@@ -1,6 +1,7 @@
 ﻿$background-color-bar: rgba(15, 39, 66, 0.7);
 $background-dark-color-bar: rgba(15, 39, 66, 0.7);
 $scrolled-bar-color: rgb(0, 0, 0);
+$width-l: 850px;
 
 html, body {
     margin: 0;
@@ -11,7 +12,7 @@ body {
     font-family: "Open Sans",sans-serif;
 }
 
-article {
+section {
     min-height: 100vh;
     background-size: cover;
     background-position: center top;
@@ -24,19 +25,29 @@ footer {
     font-size: 0.9em;
 }
 
-.col {
-    margin: auto;
-    width: 100%;
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
 }
 
-.page > .col {
-    padding-top: 50px;
+pre {
+    background-color: #eee;
+}
+
+.col {
+    margin: auto;
+}
+
+section > .col {
+    padding: 50px 0 0 0;
+    margin: 0 10px;
 }
 
 #top {
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
 }
 
 #home {
@@ -47,7 +58,7 @@ footer {
 }
 
 #gallery img {
-    width: 30%;
+    width: 30.5%;
     margin: 1%;
     display: block;
     float: left;
@@ -55,9 +66,7 @@ footer {
 }
 
 #intro {
-    /*margin-top: 10%;*/
     text-align: center;
-    /*background-color: $background-color-bar;*/
     position: absolute;
     width: 100%;
     bottom: 1px;
@@ -69,16 +78,6 @@ footer {
         line-height: 30vw;
         color: $background-color-bar;
     }
-}
-
-#debug {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.1);
-    z-index: 1000;
-    right: 0;
-    bottom: 0;
-    font-size: 11px;
-    color: rgba(0, 0, 0, 0.7);
 }
 
 nav {
@@ -108,9 +107,6 @@ nav {
 }
 
 .scrolled {
-    #intro {
-        /*display: none;*/
-    }
 
     #top {
         width: 100%;
@@ -181,7 +177,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 20;
     width: 100vw;
     height: 100vh;
     background-image: url('img/load.png');
@@ -206,16 +202,19 @@ header {
         margin: auto;
     }
 
-    article > .col {
+    section > .col {
         width: 80%;
+        padding: 50px 0 0 0;
+        margin: auto;
     }
+
+
 
     nav {
         width: 100%;
 
         a {
             padding: 0 20px;
-            /*width: 100%;*/
             line-height: 70px;
         }
 
@@ -226,11 +225,6 @@ header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
-            li {
-                /*width: 20%;*/
-                /*float: left;*/
-            }
         }
     }
 
@@ -250,7 +244,7 @@ header {
             background-color: $scrolled-bar-color;
 
             > .col {
-                width: 850px;
+                width: $width-l;
                 height: 50px;
                 margin: auto;
             }
@@ -289,15 +283,15 @@ header {
     }
 
     header .col {
-        width: 850px;
+        width: $width-l;
     }
 
     nav ul {
-        width: 850px;
+        width: $width-l;
     }
 
-    article > .col {
-        width: 850px;
+    section > .col {
+        width: $width-l;
     }
 
     #gallery img {

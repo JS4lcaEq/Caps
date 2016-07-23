@@ -1,6 +1,7 @@
 ﻿$(function () {
 
-    var bussy = false;
+    var bussyScroll = false;
+    var bussyResize = false;
 
     var menuOpened = false;
 
@@ -108,33 +109,29 @@
 
 
     $(document).on("scroll", function () {
-        if (bussy) {
+        if (bussyScroll) {
             return;
         }
-        bussy = true;
-        var timer = setTimeout(function () {
+        bussyScroll = true;
+        setTimeout(function () {
             onScroll();
-            console.log("scroll slow");
-            bussy = false;
+            bussyScroll = false;
         }, 100);
 
     });
 
     $(window).on("resize", function () {
-        //console.log("resize");
-        if (bussy) {
+        if (bussyResize) {
             return;
         }
-        bussy = true;
-        var timer = setTimeout(function () {
-            console.log("resize slow");
+        bussyResize = true;
+        setTimeout(function () {
             setHeight(pages);
             onScroll();
-            bussy = false;
+            bussyResize = false;
         }, 100);
     });
 
     onScroll();
 
-    //console.log("ready!", window.pageYOffset);
 });
