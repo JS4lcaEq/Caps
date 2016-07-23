@@ -77,11 +77,8 @@ nav {
     text-decoration: none;
     line-height: 40px;
     padding-left: 70px;
-    font-size: 1.2em;
-    /*font-weight: bold;*/ }
+    font-size: 1.2em; }
   nav .active a {
-    /*color: rgb(212, 255, 195);*/
-    /*font-size: 1.4em;*/
     font-weight: bold; }
 
 .scrolled #intro {
@@ -123,6 +120,24 @@ header {
       margin: 5px 15px;
       height: 40px; }
 
+#big_view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/load.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+  display: none;
+  cursor: pointer; }
+
+#big_view.opened {
+  display: block; }
+
 @media all and (min-width: 568px) {
   header .col {
     width: 80%;
@@ -149,24 +164,8 @@ header {
         /*float: left;*/ }
 
   #gallery img {
-    width: 22%; }
-
-  #big_view {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("img/Gallery/29S.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #000;
-    display: none; }
-
-  #big_view.opened {
-    display: block; } }
+    width: 22%;
+    cursor: pointer; } }
 @media all and (min-width: 992px) {
   .scrolled #top.opened nav {
     background-color: black; }

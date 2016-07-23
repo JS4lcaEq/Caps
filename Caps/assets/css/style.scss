@@ -98,13 +98,10 @@ nav {
         line-height: 40px;
         padding-left: 70px;
         font-size: 1.2em;
-        /*font-weight: bold;*/
     }
 
     .active {
         a {
-            /*color: rgb(212, 255, 195);*/
-            /*font-size: 1.4em;*/
             font-weight: bold;
         }
     }
@@ -180,7 +177,25 @@ header {
     }
 }
 
+#big_view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/load.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    display: none;
+    cursor: pointer;
+}
 
+#big_view.opened {
+    display: block;
+}
 
 
 
@@ -221,25 +236,7 @@ header {
 
     #gallery img {
         width: 22%;
-    }
-
-    #big_view {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        width: 100vw;
-        height: 100vh;
-        background-image: url('img/Gallery/29S.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #000;
-        display: none;
-    }
-
-    #big_view.opened {
-        display: block;
+        cursor: pointer;
     }
 }
 
