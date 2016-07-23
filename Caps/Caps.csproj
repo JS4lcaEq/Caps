@@ -75,7 +75,6 @@
     <Content Include="assets\css\img\27.jpg" />
     <Content Include="assets\css\img\bg3.jpg" />
     <Content Include="assets\css\img\bg4.jpg" />
-    <Content Include="assets\css\grid.css" />
     <Content Include="assets\css\img\bg_boat_b.jpg" />
     <Content Include="assets\css\img\bg_boat_b05.jpg" />
     <Content Include="assets\css\img\burger.svg" />
@@ -101,9 +100,7 @@
     <Content Include="assets\css\img\logo_red.svg" />
     <Content Include="assets\css\offcanvas.css" />
     <Content Include="assets\css\style.css" />
-    <Content Include="assets\css\style5.css" />
     <Content Include="assets\js\offcanvas.js" />
-    <Content Include="bootstrap4.html" />
     <Content Include="favicon.ico" />
     <Content Include="assets\css\img\favicon_1.ico" />
     <Content Include="assets\css\img\favicon_old.ico" />
@@ -120,18 +117,12 @@
     <Content Include="assets\css\img\logo7.svg" />
     <Content Include="assets\css\img\logo8.svg" />
     <Content Include="assets\css\img\logo9.svg" />
-    <Content Include="index2.html" />
-    <Content Include="index3.html" />
     <Content Include="index.html" />
-    <Content Include="index5.html" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="assets\css\style5.scss" />
-    <Content Include="assets\css\style5.css.map" />
-    <Content Include="assets\css\fonts\bankgothic-lt-bt-light.ttf" />
     <Content Include="assets\css\style.css.map" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\app.js" />
@@ -140,7 +131,6 @@
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
-    <Content Include="assets\css\style4.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -149,13 +139,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index_.html" />
-    <Content Include="assets\css\scroll.css" />
-    <Content Include="scroll.html" />
-    <Content Include="assets\css\style_.css" />
-    <Content Include="assets\css\style3.css" />
     <None Include="assets\css\style.scss" />
-    <Content Include="assets\css\style4.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
