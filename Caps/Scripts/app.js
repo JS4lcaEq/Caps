@@ -1,7 +1,8 @@
 ﻿$(function () {
 
-    var elements = { body: $("body") };
     var bussy = false;
+
+    var elements = { body: $("body"), bigView: $("#big_view") };
 
     function setBody(scroll) {
         if (scroll > 5) {
@@ -10,8 +11,6 @@
             elements.body.removeClass("scrolled");
         }
     }
-
-
 
     function newPage(id) {
         return {
@@ -32,6 +31,8 @@
             }
         };
     }
+
+
 
     function setHeight(pages) {
         var prev = 0;
@@ -59,9 +60,34 @@
         }
     }
 
+    function onScroll() {
+        var s = window.pageYOffset;
+        setBody(s);
+        disactivateMenu(pages);
+        getActive(pages, s).activate();
+    }
+
+    function galleryIni(thumbnailsSelector, bigViewSelector) {
+        $(bigViewSelector).on("click", function (e) {
+            $(e.currentTarget).removeClass("opened");
+        });
+        $(thumbnailsSelector).each(function (index, item) {
+            var url = item.src.replace("_", "");
+            $(item).on("click", function () {
+                elements.bigView.css("background-image", "url('" + url + "')");
+                elements.bigView.addClass("opened");
+
+            });
+        });
+    }
+
+    galleryIni("#gallery img", "#big_view");
+
     var pages = [newPage("home"), newPage("about"), newPage("gallery"), newPage("contacts")];
 
     setHeight(pages);
+
+
 
     $(document).on("scroll", function (e) {
         if (bussy) {
@@ -70,16 +96,13 @@
         bussy = true;
 
         var timer = setTimeout(function () {
-            var s = window.pageYOffset;
-            setBody(s);
-            disactivateMenu(pages);
-            var activePage = getActive(pages, s);
-            activePage.activate();
-            //console.log("jQuery scroll: ", s, activePage);
+            onScroll();
             bussy = false;
         }, 50);
 
     });
 
-    console.log("ready!");
+    onScroll();
+
+    //console.log("ready!", window.pageYOffset);
 });

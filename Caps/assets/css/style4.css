@@ -146,12 +146,16 @@ header {
 
   #big_view {
     position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 200px;
-    height: 200px;
-    background-image: url("img/Gallery/29S_.jpg");
-    background-size: contain; } }
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/Gallery/29S.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none; } }
 @media all and (min-width: 992px) {
   .scrolled #top.opened nav {
     background-color: #484848; }

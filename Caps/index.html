@@ -4,99 +4,117 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Mobile Meta -->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/img/favicon.ico">
 
     <title>Self</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
-
-
-    <!-- Custom styles for this template -->
-    <link href="app/vaDirectiveVirtualRepeater/style.css" rel="stylesheet" />
-
-    <!--<link href="jumbotron.css" rel="stylesheet">-->
+    <!--<link href="Content/bootstrap.min.css" rel="stylesheet" />-->
+    <!--<link href="Content/bootstrap-theme.min.css" rel="stylesheet" />-->
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>-->
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="assets/ie-emulation-modes-warning.js"></script>
-
+    <!--<script src="assets/js/ie-emulation-modes-warning.js"></script>-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
-<body ng-controller="MainCtrl as ctrl">
+<body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Virtual Repeater simple1</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
+    <article id="home" class="page">
+        <div id="top">
+            <div class="col">
 
-            </div><!--/.navbar-collapse -->
-        </div>
-    </nav>
+                <header>
+                    <div class="col">
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Virtual Repeater</h1>
-            <p>AngularJS simple directive to display lists.</p>
-        </div>
-    </div>
+                        <img class="logo" src="assets/css/img/logo2.svg" alt="'VA' - site logo" />
 
-    <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4 form-inline">
-                <h2>Data Source</h2>
-                <label>length: </label> <input class="form-control" ng-model="ctrl.cnt" />
-                <button class="btn btn-default" role="button" ng-click="ctrl.fillSrc(ctrl.cnt)">Reset</button>
-            </div>
-            <div class="col-md-4">
-                <h2>Options</h2>
-                <p class="form-inline"><label>length: </label> <input class="form-control" ng-model="ctrl.len" /></p>
-                <p class="form-inline"><label>index: </label> <input class="form-control" ng-model="ctrl.index" /></p>
-                <label>template: </label><input class="form-control" ng-model="ctrl.template" />
+                        <h1>SELF</h1>
+                        <a><img src="assets/css/img/burger.svg" /></a>
+                    </div>
+                </header>
 
-
-            </div>
-            <div class="col-md-4">
-                <h2>Directive Sample</h2>
-
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <hr />
-        <footer>
-            <p>Virtual Repeater &copy; VAsoft 2015</p>
-        </footer>
-    </div>
-    <pre>{{ctrl.debug}}</pre>
+        <div id="intro">
+            <h2>SELF</h2>
+            <p></p>
+        </div>
+    </article>
+
+    <article id="about" class="page">
+        <div class="col">
+            <h2>About</h2>
+            <h2>Validation</h2>
+            <ul>
+                <li><a >W3C</a></li>
+            </ul>
+            <p>And about photos. It's me.</p>
+        </div>
+    </article>
+
+    <article id="gallery" class="page">
+        <div class="col">
+            <h2>Gallery</h2>
+            <p></p>
+            <a href="assets/css/img/Gallery/27S.jpg"><img src="assets/css/img/Gallery/27S_.jpg" /></a>
+            <img src="assets/css/img/Gallery/16S_.jpg" />
+            <img src="assets/css/img/Gallery/11S_.jpg" />
+            <img src="assets/css/img/Gallery/28S_.jpg" />
+            <img src="assets/css/img/Gallery/29S_.jpg" />
+            <img src="assets/css/img/Gallery/3S_.jpg" />
+            <img src="assets/css/img/Gallery/4S_.jpg" />
+            <img src="assets/css/img/Gallery/9S_.jpg" />
+            <div id="big_view">big_view big_view big_view </div>
+        </div>
+    </article>
+
+    <article id="contacts" class="page">
+        <div class="col">
+            <h2>Contacts</h2>
+            <p>3</p>
+        </div>
+    </article>
+
+    <footer>
+        VA © 2016.
+    </footer>
+
     <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="Scripts/jquery-2.2.3.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
+    <!--<script src="Scripts/bootstrap.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="Scripts/angular.min.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!--<script src="Scripts/angular.min.js"></script>
+    <script src="app/vaScroll/script.js"></script>
     <script src="app/app.js"></script>
-    <script>angular.bootstrap("html", ['app']);</script>
+    <script>angular.bootstrap("html", ['app']);</script>-->
+    <script src="Scripts/app.js"></script>
 </body>
 </html>
+

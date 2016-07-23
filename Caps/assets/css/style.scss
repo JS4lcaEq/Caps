@@ -92,7 +92,7 @@ nav {
         line-height: 40px;
         padding-left: 70px;
         font-size: 1.2em;
-        font-weight:bold;
+        font-weight: bold;
     }
 
     .active {
@@ -216,13 +216,21 @@ header {
     }
 
     #big_view {
-        position:fixed;
-        top: 10px;
-        left: 10px;
-        width: 200px;
-        height: 200px;
-        background-image: url('img/Gallery/29S_.jpg');
-        background-size:contain;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index:1000;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('img/Gallery/29S.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000;
+        display: none;
+    }
+    #big_view.opened {
+        display: block;
     }
 }
 

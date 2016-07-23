@@ -10,7 +10,6 @@
             return {
                 "id": id
                 , "element": $document.find("#" + id)
-                , "menuElement": 
                 , "hght": 0
                 , "start": 0
                 , "end": 0
